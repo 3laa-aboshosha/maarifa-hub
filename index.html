@@ -3,7 +3,7 @@
 :root{--bg:#050a18;--panel:#0b1330;--panel2:#0f1a3d;--line:#1b2a57;--ink:#e8eefc;--mut:#8b9bc4;--acc:#3b82f6;--acc2:#60a5fa}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(1200px 500px at 70% -10%,#102455 0,transparent 60%),var(--bg);color:var(--ink);font-family:"Segoe UI","Noto Sans Arabic",Tahoma,Arial,sans-serif}
+body{margin:0;background:radial-gradient(1200px 500px at 70% -10%,#102455 0,transparent 60%),var(--bg);color:var(--ink);font-family:"Segoe UI","Noto Sans Arabic",Tahoma,Arial,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
 svg{display:block}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1180px;margin:0 auto;padding:18px 16px 0}
@@ -166,6 +166,8 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
 .topic .abody p.note.warn{border-inline-start-color:#ef4444;background:#2a1020}
 .topic .applink{display:flex;flex-direction:column;gap:2px;background:#0f1a3d;border:1px solid #2b4aa8;border-radius:12px;padding:10px 16px;margin:0 0 10px;color:#93c5fd;font-weight:700;text-decoration:none}
 .topic .applink small{color:#64748b;font-weight:400;text-align:right}
+.topic .abody p.bul{position:relative;padding-inline-start:20px;margin:0 0 8px}.topic .abody p.bul:before{content:"";position:absolute;inset-inline-start:2px;top:16px;width:8px;height:8px;border-radius:50%;background:#3b82f6}
+.emo{width:1.15em;height:1.15em;vertical-align:-.2em;margin:0 2px}
 </style></head>
 <body>
 <div class="wrap">
@@ -343,15 +345,15 @@ const topics=[
  },
  {
   "id": "secret-codes",
-  "t": "تطبيقين لمعرفة الاكواد السرية لكل هاتف",
+  "t": "تطبيق لمعرفة الاكواد السرية لكل هاتف اندرويد",
   "c": "كيف تحمي نفسك وهاتفك من الاختراق",
   "i": "lock",
-  "d": "تطبيقين من جوجل بلاي بيعرّفوك الأكواد السرية لهاتفك أيًا كان نوعه.",
+  "d": "تطبيق من جوجل بلاي يعرّفك الأكواد السرية لهاتفك الاندرويد.",
   "banner": "✅✍موضوع مهم جداً 🚨 📱",
   "blocks": [
    [
     "p",
-    "تطبيقين² معرفة الاكواد السرية لجميع الهواتف الذكية"
+    "تطبيق لمعرفة الاكواد السرية لهواتف الاندرويد"
    ],
    [
     "s",
@@ -359,37 +361,28 @@ const topics=[
     "تطبيق All Secret Codes for Android 📲"
    ],
    [
-    "s",
-    2,
-    "تطبيق Secret Codes and Hacks 📲"
-   ],
-   [
     "p",
     "بسبب كثرة التطبيقات الموجودة في جوجل بلاي يكون الامر معقد ان تحصل على اداة او تطبيق مفيد تستفيد منه بشكل كبير دائما وبشكل مستمر ."
    ],
    [
     "p",
-    "سوف نتعرف الى اداة توفر لنا مميزات كثيرة جدا وهي مميزات مهمة للاندرويد وحتى يمكننا استعمالها على اجهزة ايفون IOS حيث اننا سوف نتعرف الى اداة توفر لنا اكواد مفيدة جدا يمكننا الاستفادة منها على الموبايل وهي طريقة مجانية بالتاكيد ومميزات اخرى سوف نتعرف اليها ."
+    "سوف نتعرف الى اداة توفر لنا مميزات كثيرة جدا وهي مميزات مهمة للاندرويد حيث اننا سوف نتعرف الى اداة توفر لنا اكواد مفيدة جدا يمكننا الاستفادة منها على الموبايل وهي طريقة مجانية بالتاكيد (التطبيق مجاني لكنه يعرض اعلانات) ومميزات اخرى سوف نتعرف اليها ."
    ],
    [
     "p",
-    "سوف نتعرف الى \"تطبيقين²\" موجودين في جوجل بلاي"
+    "سوف نتعرف الى تطبيق موجود في جوجل بلاي"
    ],
    [
     "h",
-    "التطبيق الاول \" All Secret Codes for Android \""
+    "التطبيق \" All Secret Codes for Android \""
    ],
    [
     "p",
-    "وهو تطبيق يختص في مجال الاكواد السرية التي يمكننا الاستفادة منها على هواتفنا بالاضافة الى ادوات كثيرة اخرى يمكننا الاستفادة منها ايضا سوف تجعلنا نتعرف الى ابسط التفاصيل عن هاتفنا مهما يكن نوعه سوائا هاتف سامسونج او اوبو , هواوي الخ..."
+    "وهو تطبيق يختص في مجال الاكواد السرية التي يمكننا الاستفادة منها على هواتفنا بالاضافة الى ادوات كثيرة اخرى يمكننا الاستفادة منها ايضا سوف تجعلنا نتعرف الى ابسط التفاصيل عن هاتفنا مهما يكن نوعه سوائا هاتف سامسونج او اوبو , هواوي الخ... علما ان الاكواد تختلف حسب نوع الهاتف وموديله واصدار الاندرويد، وبعضها قد لا يعمل على الهواتف الحديثة ."
    ],
    [
-    "h",
-    "والتطبيق الثاني \"Secret Codes and Hacks\""
-   ],
-   [
-    "p",
-    "وهو أيضا تطبيق يختص في مجال الاكواد السرية التي يمكننا الاستفادة منها على هواتفنا يمكننا الاستفادة منها ايضا سوف تجعلنا نتعرف الى ابسط التفاصيل عن هاتفنا مهما يكن نوعه سوائا هاتف سامسونج او اوبو , هواوي , وايفون .. اخ"
+    "n",
+    "التطبيق للاندرويد فقط ولا يمكن تثبيته على ايفون"
    ],
    [
     "l",
@@ -403,6 +396,154 @@ const topics=[
    [
     "w",
     "لأن استخدامها بشكل خاطئ قد يؤدي إلى الأضرار بهاتفك"
+   ]
+  ],
+  "pray": "آللَّهُــمَّ صَلِّ وَسَـــلِّمْ وَبَارِڪ على نَبِيِّنَـــا مُحمَّد ﷺ",
+  "src": null
+ },
+ {
+  "id": "imei-iphone",
+  "t": "أفضل 4 مواقع تحقق من رقم IMEI على iPhone",
+  "c": "كيف تحمي نفسك وهاتفك من الاختراق",
+  "i": "chip",
+  "d": "4 مواقع للتحقق من رقم IMEI للايفون ومعرفة حالته قبل الشراء.",
+  "banner": "✅✍موضوع مهم جداً 🚨 💻📱",
+  "blocks": [
+   [
+    "p",
+    "📱تُعد القدرة على التحقق من IMEI الخاص بجهاز iPhone أمرًا مهمًا للغاية لعدد من الأسباب."
+   ],
+   [
+    "p",
+    "بدايةً، إذا كنت تريد إلغاء قفل IMEI لجهازك وبالتالي تكون قادرًا على استخدامه مع الشبكات الأُخرى، فستحتاج إلى رقم IMEI الخاص بك بالإضافة إلى حالة جهازك التي لا يمكن العثور عليها إلا بواسطة مُدقّق IMEI."
+   ],
+   [
+    "p",
+    "قد ترغب أيضًا في معرفة ما إذا كان جهازك مدرجًا في القائمة السوداء أو مقفلاً. لمعرفة هل الجهاز مقفل على شبكة معينة: افتح الإعدادات ثم عام ثم حول (Settings > General > About) وابحث عن Carrier Lock، فإذا كُتب No SIM restrictions فالجهاز مفتوح. أما القائمة السوداء فتعرفها بفحص IMEI."
+   ],
+   [
+    "p",
+    "تقدم معظم أدوات التحقق من IMEI عبر الإنترنت الخدمة مجانًا ولكن ليست جميعها موثوقة بنسبة 100٪ لتزويدك بالمعلومات الصحيحة في كل مرة."
+   ],
+   [
+    "p",
+    "لهذا السبب، قمت بتجميع قائمة بأفضل أدوات فحص IMEI المجانية لـiPhone وكيفية عملها."
+   ],
+   [
+    "h",
+    "أفضل 4 مواقع للتحقق من رقم IMEI عبر الانترنت مجاناً 📱"
+   ],
+   [
+    "s",
+    1,
+    "الموقع الاول iunlocker"
+   ],
+   [
+    "l",
+    "iunlocker - bit.ly/iunlocker-check-icloud",
+    "https://bit.ly/iunlocker-check-icloud"
+   ],
+   [
+    "p",
+    "واحد من أفضل مواقع التحقق من رقم IMEI عبر الانترنت معروف ببساطة iunlocker ولكنه لايقوم فقط بالتحقق من رقم IMEI، حيث يمكن استخدامه أيضاً لإلغاء قفل IMEI على iPhone لسعر محدد."
+   ],
+   [
+    "b",
+    "ميزة الكشف عن هاتفك ان كان كلين او لوست lost ، clean"
+   ],
+   [
+    "b",
+    "من مميزات الموقع داعم لكل الموديلات الحديثة والقديمة"
+   ],
+   [
+    "b",
+    "وكما يدعم الكشف عن ساعات ابل مسروقة او لا ."
+   ],
+   [
+    "b",
+    "ميزة التحقق من رقم IMEI نفسها مجانية وسهلة جداً للقيام بها."
+   ],
+   [
+    "p",
+    "في الحقيقة، هذا هو السبب الرئيسي وراء وجود هذه الخدمة في قائمتنا."
+   ],
+   [
+    "p",
+    "الطريقة سهلة ومباشرة، يمكنك ببساطة التحقق من IMEI الخاص بك هناك مباشرة على موقع المدقق."
+   ],
+   [
+    "s",
+    2,
+    "الموقع الثاني imeipro"
+   ],
+   [
+    "l",
+    "imeipro - imeipro.info",
+    "https://imeipro.info/"
+   ],
+   [
+    "p",
+    "موقع مجاني لفحص رقم IMEI في القائمة السوداء العالمية (مفقود أو مسروق)."
+   ],
+   [
+    "p",
+    "يعرض لك الماركة والموديل وحالة Find My iPhone وحالة iCloud إن توفرت."
+   ],
+   [
+    "p",
+    "اطلب رقم IMEI من هاتفك بالضغط على *#06# ثم ادخله في الخانة، واجتز اختبار الكابتشا (captcha) واضغط على زر الفحص."
+   ],
+   [
+    "s",
+    3,
+    "الموقع الثالث doctorsim"
+   ],
+   [
+    "l",
+    "doctorsim - doctorsim.com",
+    "https://www.doctorsim.com/en-us/phone-imei-checks/"
+   ],
+   [
+    "p",
+    "فحص مجاني لرقم IMEI في القائمة السوداء (هل أُبلغ عن الجهاز كمفقود أو مسروق)."
+   ],
+   [
+    "p",
+    "اكتب *#06# في لوحة الاتصال للحصول على الـ IMEI، وادخل أول 15 رقم فقط، ووافق على الشروط واضغط CHECK PHONE."
+   ],
+   [
+    "p",
+    "يصلك تقرير الفحص على بريدك الإلكتروني. توجد أيضًا فحوصات إضافية مدفوعة (Premium)."
+   ],
+   [
+    "s",
+    4,
+    "الموقع الرابع: Check IMEI"
+   ],
+   [
+    "l",
+    "Check IMEI - www.imei.info",
+    "https://www.imei.info"
+   ],
+   [
+    "p",
+    "هذا موقع رائع آخر يقوم بالتحقق من رقم IMEI على iPhone بسهولة تامة."
+   ],
+   [
+    "p",
+    "يجعل إعداد الموقع نفسه من السهل جدًا التحقق من iPhone. يوفّر الموقع خدمات أُخرى مثل حاسبة رقم IMEI ورموز موفّر الشبكة كما يعرض خدمة فتح القفل. الفحص المجاني للمعلومات الأساسية فقط (الماركة والموديل)، أما فحص القائمة السوداء وقفل الشبكة فخدمات مدفوعة."
+   ],
+   [
+    "p",
+    "السبب الذي يجعلنا نعتقد أنه خيار رائع هو ببساطة بسبب سرعة ظهور النتائج."
+   ],
+   [
+    "p",
+    "لاستخدام هذه الخدمة، كل ما عليك فعله هو إدخال رقم IMEI ثم النقر فوق \"تحقق\"."
+   ],
+   [
+    "p",
+    "انتظر بضع ثوانٍ حتى يُنتج الموقع النتائج."
    ]
   ],
   "pray": "آللَّهُــمَّ صَلِّ وَسَـــلِّمْ وَبَارِڪ على نَبِيِّنَـــا مُحمَّد ﷺ",
@@ -429,9 +570,10 @@ function renderGrid(){
  $("grid").innerHTML=list.length?list.map(x=>`<a class="card" href="#/t/${x.id}">${art(x)}<div class="cb"><span class="ctag" style="--g:${G[x.c]}">${x.c}</span><h3>${x.t}</h3><p>${x.d}</p><span class="more">اقرأ الموضوع ${arrow}</span></div></a>`).join(""):'<div class="empty">مفيش نتائج</div>';
 }
 function render(){renderNav();renderGrid()}
-const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const EMO={"\u2705": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iIzc3QjI1NSIgZD0iTTM2IDMyYTQgNCAwIDAgMS00IDRINGE0IDQgMCAwIDEtNC00VjRhNCA0IDAgMCAxIDQtNGgyOGE0IDQgMCAwIDEgNCA0djI4eiIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yOS4yOCA2LjM2MmEyLjUwMiAyLjUwMiAwIDAgMC0zLjQ1OC43MzZMMTQuOTM2IDIzLjg3N2wtNS4wMjktNC42NWEyLjUgMi41IDAgMSAwLTMuMzk0IDMuNjcxbDcuMjA5IDYuNjY2Yy40OC40NDUgMS4wOS42NjUgMS42OTYuNjY1LjY3MyAwIDEuNTM0LS4yODIgMi4wOTktMS4xMzkuMzMyLS41MDYgMTIuNS0xOS4yNyAxMi41LTE5LjI3YTIuNSAyLjUgMCAwIDAtLjczNy0zLjQ1OHoiLz48L3N2Zz4=", "\u270d": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iI0VGOTY0NSIgZD0iTTYuMjAzIDIxLjY0MWMtLjA3OC45MjIuMzIxIDEuMTk4Ljk0NiAxLjYzNi42MTguNDMzIDQuMzgzLTIuODY3IDUuNjE0LTMuMzY5IDEuMjMxLS41MDIgMTIuNzg3LTIuOTQ5IDEyLjI4Ni01LjE4My0uNTAxLTIuMjM0LTMuOTkzLTIuNTY0LTYuNjgzLTIuMTA4LTIuNjkuNDU2LTcuODM4IDIuODIyLTkuMzQyIDQuMDk5LTEuNTA0IDEuMjc2LTIuODIxIDQuOTI1LTIuODIxIDQuOTI1em04LjYyMiAxLjQ5N3MtMy41NTcgMS4xNTUtMy41NTcgNC4xNTUuODY2IDQuNjkyIDEuMjc2IDUuNTEzYy40MTEuODIgMS42ODggMS42MTYgMy40NTUuODUxIDIuMDUyLS44ODktLjQ5MS02LjAwNCA2LTMuNjU2IDIuOTc0IDEuMDc1IDYuMDU5IDIuNTI4IDkuMDU5IDEuNTI4QzMzLjkwNCAzMC41OCAzNSAyNyAzNSAyNWMwLTQuMDk0LTMtMy00LTJzLTkgMy0xMCAzLTYuMTc1LTIuODYyLTYuMTc1LTIuODYyeiIvPjxwYXRoIGZpbGw9IiNGOUNBNTUiIGQ9Ik0xOS4zMTIgMjguMTg4cy0uMTItMS4zMTYtMS4zNzUtMS40NjljLTEuMDMxLS4xMjUtMi42NTYuMjE5LTMuNSAxLjkwNi0uODQ0IDEuNjg4LTIuMzQ0IDEuNDA2LTIuMjgxIDIuODEyLjA2MiAxLjQwNi41IDIuNSAxLjQwNiAyLjc4MS45MDcuMjgyIDIuMTg4LS4yMTggMi4zNDQtMS43MTguMTU2LTEuNS4zNDQtMi44NzUgMS4zMTItMy40NjkuOTctLjU5MyAyLjA5NC0uODQzIDIuMDk0LS44NDN6Ii8+PHBhdGggZmlsbD0iI0VGOTY0NSIgZD0iTTE4IDI2cy0xLTEtMy0xLTYuNjY0IDIuMTMzLTUuMjUgNi4zNzVjMSAzIDMuODQ0IDEuNTk0IDQuMjUtMS4zNzUuNDA3LTIuOTczIDQtNCA0LTR6Ii8+PHBhdGggZmlsbD0iI0Y5Q0E1NSIgZD0iTTE3IDI2cy0xLTEtMy0xLTQuODg1IDEuNTMtNSA2Yy0uMDk0IDMuNjU2IDQuMDMxIDIgNC0xLS4wMzEtMyA0LTQgNC00eiIvPjxwYXRoIGZpbGw9IiNFRjk2NDUiIGQ9Ik01IDI3YzAgMy4yOTcuNDU3IDUuMjg2IDIuNDI4IDQuOTQ3IDMuMjY5LS41NjIgMi4wMjgtNC42MTQgNC44ODktNS43NTQgMi4wNzctLjgyNyA1LjEwMS0uNjMgOC4wMiAxLjEwM0MyMi4yNiAyOC40MzggMjEgMjQgMTkgMjNzLTggMC05IDAtNSA0LTUgNHoiLz48cGF0aCBmaWxsPSIjRjlDQTU1IiBkPSJNNC44NDIgMjcuMTc0QzMuMjUxIDI5LjgzOSA0LjIxOSAzMi41OTQgNyAzMmMyLjY5MS0uNTc0IDEuMzQzLTQuMDcgNC02IDEuNDg5LTEuMDgyIDQuNjk4LTEuNDQ1IDYuNjk4LS40NDVTMjAgMjQgMTggMjNzLTguNTQtLjAyNS05LjUzOC4wMzdjLTEuOTA5LjExOS0zLjYyIDQuMTM3LTMuNjIgNC4xMzd6Ii8+PHBhdGggZmlsbD0iIzNCODhDMyIgZD0iTTkuNDE4IDI5LjExNGExLjg3IDEuODcgMCAwIDEtMi42MzkuMThsLS4xOTYtLjE3MWExLjg2OSAxLjg2OSAwIDAgMS0uMTgtMi42MzhMMjguOTI2LjY2OGExLjg3IDEuODcgMCAwIDEgMi42MzktLjE4bC4xOTUuMTcxYTEuODcgMS44NyAwIDAgMSAuMTgxIDIuNjM4TDkuNDE4IDI5LjExNHoiLz48cGF0aCBmaWxsPSIjM0I4OEMzIiBkPSJNMTAuNDkgMjcuODg2Yy0yLjM2IDIuNzA1LTguMzEzIDguMDA5LTkuMDY3IDcuMzUyLS43NTMtLjY1NyAzLjY5My03LjI3NSA2LjA1My05Ljk4MSAyLjM2LTIuNzA2IDEuNjYxLS41NDIgMi40OTMuMTg1LjgzMi43MjYgMi44ODEtLjI2LjUyMSAyLjQ0NHoiLz48cGF0aCBmaWxsPSIjRUY5NjQ1IiBkPSJNNi42NzIgMjUuMDI2YzAgMSAyLjQyMSAxLjkxNSAzLjQyMS45MTVzMy4zNDEtMi4yMjggNi40MTktLjk0MUMyMy43MTYgMjguMDEgMjEgMjQgMTggMjNzLTggMC05IDAtMi4zMjggMi4wMjYtMi4zMjggMi4wMjZ6Ii8+PHBhdGggZmlsbD0iI0ZGREM1RCIgZD0iTTYuMTk1IDIyLjA0M2MtLjM1OC0xLjExMyAyLjE4OC03LjI3OSAzLjM0MS04LjIzNCAxLjQ1Mi0xLjIwMiA3LjA2OS0zLjA2MyA5LjA2OS0zLjA2M1MzNSAxOCAzNSAyM3MtMiA1LjYyNS00Ljg3NSA2LjQwNmMtMi4yOTkuNjI1LTcuMTE1LjI0Mi05LjIxOS0xLjcxOUMxOS4wNjIgMjUuOTY5IDE3Ljc4MSAyNC43ODEgMTYgMjRjLTMuMzAyLTEuNDQ4LTUuNTAzLjQyNC02LjUwMyAxLjQyNC0yIDItNS43NjgtLjE1OS0yLjYyNS0zLjU4QzkuMTIxIDE5LjM5NSAxMS4xMDIgMTguNjMyIDEzIDE4YzYtMiAxMC0yIDgtNC0uNzA3LS43MDctMS4wOTIuMzQ2LTIuMDc2LjUyNS0xLjk4LjM2LTMuNTU2LjYwMi02LjE2NSAxLjQ3Mi0uOTAyLjMtNS4xNzIgMy4wMjMtNi41NjQgNi4wNDZ6Ii8+PHBhdGggZmlsbD0iI0VGOTY0NSIgZD0iTTEzLjE5NiAxNi4yNzVjMS4wNjQtLjM4OCA1LjcwMi0xLjIzMiA4LjExNS0yLjA2OCAxLjk0OS0uNjc2IDMuNjU5LjYzNi0uMDQgMi4wMjgtMy41NyAxLjM0My03LjI3OSAxLjIzMy05Ljk4NCAyLjMwNy0xLjAyMy40MDYtMS45MS0uODc1IDEuOTA5LTIuMjY3eiIvPjxwYXRoIGZpbGw9IiMzQjg4QzMiIGQ9Ik0yMi40ODcgOC4wMjNzLTUuOTI4IDYuNzk1LTguNDQ2IDkuNjYxYzIuMjU0LS45MjYgNC4yNzEtLjc1IDYuMTk4LTEuODg0IDEuOTI3LTEuMTMzIDIuODA2LTIuMzQyIDUuNzMtNS42OTUgMS4wODYtMS4yNDQtMy40ODItMi4wODItMy40ODItMi4wODJ6Ii8+PC9zdmc+", "\u2b07": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iIzNCODhDMyIgZD0iTTM2IDMyYTQgNCAwIDAgMS00IDRINGE0IDQgMCAwIDEtNC00VjRhNCA0IDAgMCAxIDQtNGgyOGE0IDQgMCAwIDEgNCA0djI4eiIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMiA3djloN0wxOCAyOSA3IDE2aDdWN3oiLz48L3N2Zz4=", "\ud83d\udc47": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iI0ZGREM1RCIgZD0iTTQgMTUuODk0cy0uMDkzIDIuMzYyIDEuNzkyIDMuMDY4YzEuNjY3LjYyNSAyLjMwOS0uNjIyIDIuMzA5LS42MjJzLS4wNTkgMS45MTQgMS45NDEgMi42MjJjMS44ODUuNjY4IDIuNzUtLjk1OCAyLjc1LS45NThzLjMwNyAxLjg3MSAyLjI5MiAyLjQxN0MxNi43NTUgMjIuODggMTggMjEuMjU0IDE4IDIxLjI1NHYxMi4yMDhjMCAuOTU5LjU0MiAyLjU3NSAyLjU0MyAyLjU3NiAyIC4wMDIgMi40NTctMS42NTkgMi40NTctMi41NzZ2LTIwLjVjMC0xIDEtMSAxIDB2Mi42NjZjMCAzLjc5MiAyLjAzOCA2LjE0MyAyLjc1MSA2Ljc5Mi43MTMuNjUgMS42NjcuOTc5IDIuODIuNzM0IDEuOTU2LS40MTUgMS41MjktMS45Mi45NzUtMy4xOTctMS4zMzctMy4wNzgtMi4yNTQtNy40NjQtMi41MzMtOS41MzhDMjcuMjIyIDQuNTYyIDIyLjIwNC4wNDQgMTYuMTI5LjAzOCA5LjUwMy4wMzQgNC4wMDUgNS4zMzYgNCAxMS45NjJ2My45MzJ6Ii8+PC9zdmc+", "\ud83d\udcbb": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iI0NDRDZERCIgZD0iTTM0IDI5LjA5NmMtLjQxNy0uOTYzLS44OTYtMi4wMDgtMi0yLjAwOGgtMWMxLjEwNCAwIDItLjg5OSAyLTIuMDA4VjguMDA4QTIuMDA0IDIuMDA0IDAgMCAwIDMxIDZINWMtMS4xMDQgMC0yIC44OTktMiAyLjAwOFYyNS4wOGMwIDEuMTA5Ljg5NiAyLjAwOCAyIDIuMDA4SDRjLTEuMTA0IDAtMS42NjcgMS4wMDQtMiAyLjAwOGwtMiA0Ljg5NUMwIDM1LjEwMS44OTYgMzYgMiAzNmgzMmMxLjEwNCAwIDItLjg5OSAyLTIuMDA4bC0yLTQuODk2eiIvPjxwYXRoIGZpbGw9IiM5QUFBQjQiIGQ9Im0uMDA4IDM0LjA3NS4wMDYuMDU3LjE3LjY5MkExLjk5OCAxLjk5OCAwIDAgMCAyIDM2aDMyYTIgMiAwIDAgMCAxLjk5Mi0xLjkyNUguMDA4eiIvPjxwYXRoIGZpbGw9IiM1REFERUMiIGQ9Ik0zMSAyNC4wNzVjMCAuNTU1LS40NDcgMS4wMDQtMSAxLjAwNEg2Yy0uNTUyIDAtMS0uNDQ5LTEtMS4wMDRWOS4wMTNjMC0uNTU1LjQ0OC0xLjAwNCAxLTEuMDA0aDI0Yy41NTMgMCAxIC40NSAxIDEuMDA0djE1LjA2MnoiLz48cGF0aCBmaWxsPSIjQUVCQkMxIiBkPSJtMzIuOTA2IDMxLjA0Mi0uNzYtMi4xNzVjLS4yMzktLjQ2LS42MzUtLjgzNy0xLjE4OC0uODM3SDUuMTFjLS41NTIgMC0uOTA2LjQwOC0xLjE1NiAxLjAzNmwtLjY4OCAxLjk3N2MtLjIxOS41OTYuNDQ4IDEuMDA0IDEgMS4wMDRoNy41NzhzLjkzNy0uMDQ3IDEuMTAzLS42MDhjLjE5Mi0uNjQ4LjQxNS0xLjYyNC40NjMtMS43OTYuMDc0LS4yNjQuMzg4LS41MzEuODU2LS41MzFoOC41NzhjLjUgMCAuNzQ2LjI1My44MTEuNTY2LjA0Mi4yMDQuMzEyIDEuMTQxLjQzOCAxLjc4Mi4xMTEuNTcxIDEuMjIxLjU4NiAxLjIyMS41ODZoNi41OTRjLjU1MSAwIDEuMjE3LS40NzEuOTk4LTEuMDA0eiIvPjxwYXRoIGZpbGw9IiM5QUFBQjQiIGQ9Ik0yMi4zNzUgMzMuMTEzaC03Ljc4MWMtLjM3NSAwLS41MzgtLjM0My0uNDg0LS42NzUuMDU0LS4zMzEuMzU5LTEuNzkzLjM4My0xLjk2My4wMjMtLjE3MS4yNzQtLjM3NS41MjQtLjM3NWg3LjAxNWMuMjk3IDAgLjQ5LjE2My41NS40ODkuMDU5LjMyNy4zMDIgMS42NDEuMzIxIDEuOTQxLjAxOS4zMDEtLjE2OS41ODMtLjUyOC41ODN6Ii8+PC9zdmc+", "\ud83d\udcf1": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iIzMxMzczRCIgZD0iTTExIDM2cy00IDAtNC00VjRzMC00IDQtNGgxNHM0IDAgNCA0djI4czAgNC00IDRIMTF6Ii8+PHBhdGggZmlsbD0iIzU1QUNFRSIgZD0iTTkgNWgxOHYyNkg5eiIvPjwvc3ZnPg==", "\ud83d\udcf2": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iIzMxMzczRCIgZD0iTTE4IDM2cy00IDAtNC00VjRzMC00IDQtNGgxNHM0IDAgNCA0djI4czAgNC00IDRIMTh6Ii8+PHBhdGggZmlsbD0iIzU1QUNFRSIgZD0iTTE2IDVoMTh2MjZIMTZ6bS0zIDExczEgMSAxIDItMSAyLTEgMmwtNSA1Yy0xIDEtMyAxLTMtMXYtM0gycy0yIDAtMi0ydi0yYzAtMiAyLTIgMi0yaDN2LTNjMC0yIDItMiAzLTFsNSA1eiIvPjwvc3ZnPg==", "\ud83d\udd10": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iI0FBQjhDMiIgZD0iTTE0IDBDOC40NzcgMCA0IDQuNDc3IDQgMTB2MTBoNFYxMGE2IDYgMCAwIDEgMTIgMHYxMGg0VjEwYzAtNS41MjMtNC40NzctMTAtMTAtMTBaIi8+PHBhdGggZmlsbD0iI0ZGQUMzMyIgZD0iTTI4IDMyYTQgNCAwIDAgMS00IDRINGE0IDQgMCAwIDEtNC00VjE4YTQgNCAwIDAgMSA0LTRoMjBhNCA0IDAgMCAxIDQgNHYxNFoiLz48cGF0aCBmaWxsPSIjQzE2OTRGIiBkPSJNMzUgOWE5IDkgMCAwIDAtOS05IDkgOSAwIDAgMC05IDljMCAzLjkxNyAyLjUwNyA3LjI0IDYgOC40NzdWMzMuNWEyLjUgMi41IDAgMCAwIDQuOTUuNDljLjAxOC4wMDEuMDMyLjAxLjA1LjAxYTEgMSAwIDAgMCAxLTF2LTFhMSAxIDAgMCAwLTEtMXYtMWExIDEgMCAwIDAgMS0xdi0yYTEgMSAwIDAgMC0xLTF2LTIuMjc3QTEuOTkgMS45OSAwIDAgMCAyOSAyMnYtNC41MjNjMy40OTMtMS4yMzYgNi00LjU1OSA2LTguNDc3Wm0tOS03YTIgMiAwIDEgMS0uMDAxIDQuMDAxQTIgMiAwIDAgMSAyNiAyWiIvPjwvc3ZnPg==", "\ud83d\udd30": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iIzY2NzU3RiIgZD0iTTE3IDM2YTEuOTkgMS45OSAwIDAgMS0xLjQxNC0uNTg2bC0xMS0xMUEyIDIgMCAwIDEgNCAyM1YyQTIgMiAwIDAgMSA3LjQxNC41ODZMMTcgMTAuMTcxIDI2LjU4Ni41ODZBMS45OTggMS45OTggMCAwIDEgMzAgMnYyMWEyIDIgMCAwIDEtLjU4NiAxLjQxNGwtMTEgMTFBMS45OSAxLjk5IDAgMCAxIDE3IDM2eiIvPjxwYXRoIGZpbGw9IiM0N0RFRDQiIGQ9Ik0xNyAxMyAyOCAydjIxTDE3IDM0eiIvPjxwYXRoIGZpbGw9IiNGRkZGODciIGQ9Im02IDIgMTEgMTF2MjFMNiAyM3oiLz48L3N2Zz4=", "\ud83d\udea8": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZmlsbD0iI0REMkU0NCIgZD0iTTM0LjE2IDI4LjgxMiAzMS4yNDQgMi42NzhBMy4wMTEgMy4wMTEgMCAwIDAgMjguMjUxIDBINy42NjRhMy4wMTIgMy4wMTIgMCAwIDAtMi45OTcgMi43MDRsLTIuNjcgMjYuMTA4SDM0LjE2eiIvPjxjaXJjbGUgY3g9IjE4LjA2OSIgY3k9IjE0IiByPSI5LjM2NiIgZmlsbD0iI0JFMTkzMSIvPjxwYXRoIGZpbGw9IiM5OUFBQjUiIGQ9Ik0zNS41MjEgMjkuMThILjQ3OUwwIDM0YzAgMiAyIDIgMiAyaDMyczIgMCAyLTJsLS40NzktNC44MnoiLz48cGF0aCBmaWxsPSIjQ0NENkREIiBkPSJtMzUuNTk0IDI5LjkxMi0uMDczLS43MzJDMzUuMzggMjguNDQyIDM0Ljc1MSAyOCAzNCAyOEgyYy0uNzUxIDAtMS4zOC40NDItMS41MjEgMS4xOGwtLjA3My43MzJoMzUuMTg4eiIvPjxwYXRoIGZpbGw9IiNFQzlEQUQiIGQ9Im0yOS42NDcgMTMuNjMtNy42NjgtMS4yNDggNC41MzktNi4zMDhhLjM3NS4zNzUgMCAwIDAtLjUyMy0uNTIzbC02LjMwOSA0LjUzOC0xLjI0Ny03LjY2N2EuMzc1LjM3NSAwIDAgMC0uNzQgMGwtMS4yNDggNy42NjctNi4zMDgtNC41MzhhLjM3NS4zNzUgMCAwIDAtLjUyMy41MjNsNC41MzggNi4zMDhMNi40OSAxMy42M2EuMzc0LjM3NCAwIDAgMCAwIC43NGw3LjY2OCAxLjI0OC00LjUzOCA2LjMwOGEuMzc1LjM3NSAwIDAgMCAuNTIzLjUyM2w2LjMwOC00LjUzOCAxLjI0OCA3LjY2N2EuMzc0LjM3NCAwIDAgMCAuNzQgMGwxLjI0Ny03LjY2NyA2LjMwOCA0LjUzOGEuMzc1LjM3NSAwIDAgMCAuNTIzLS41MjNsLTQuNTM4LTYuMzA4IDcuNjY4LTEuMjQ4YS4zNzQuMzc0IDAgMCAwIDAtLjc0eiIvPjwvc3ZnPg=="};
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/[\u2705\u270d\u2b07\u{1f447}\u{1f4bb}\u{1f4f1}\u{1f4f2}\u{1f510}\u{1f530}\u{1f6a8}]\ufe0f?/gu,c=>`<img class="emo" alt="" src="${EMO[c[0]===c?c:String.fromCodePoint(c.codePointAt(0))]}">`);
 function renderTopic(x){
- const body=x.blocks.map(b=>b[0]==="h"?`<h3>${esc(b[1])}</h3>`:b[0]==="s"?`<div class="step"><span class="num">${b[1]}</span><p>${esc(b[2])}</p></div>`:b[0]==="n"?`<p class="note">${esc(b[1])}</p>`:b[0]==="w"?`<p class="note warn">${esc(b[1])}</p>`:b[0]==="l"?`<a class="applink" href="${b[2]}" target="_blank" rel="noopener">⬇ ${esc(b[1])}<small dir="ltr">${b[2].replace("https://","")}</small></a>`:`<p>${esc(b[1])}</p>`).join("");
+ const body=x.blocks.map(b=>b[0]==="h"?`<h3>${esc(b[1])}</h3>`:b[0]==="s"?`<div class="step"><span class="num">${b[1]}</span><p>${esc(b[2])}</p></div>`:b[0]==="b"?`<p class="bul">${esc(b[1])}</p>`:b[0]==="n"?`<p class="note">${esc(b[1])}</p>`:b[0]==="w"?`<p class="note warn">${esc(b[1])}</p>`:b[0]==="l"?`<a class="applink" href="${b[2]}" target="_blank" rel="noopener">⬇ ${esc(b[1])}<small dir="ltr">${b[2].replace("https://","")}</small></a>`:`<p>${esc(b[1])}</p>`).join("");
  $("art").innerHTML=`<a class="back" href="#">${arrow.replace("M19 12H5M12 19l-7-7 7-7","M5 12h14M12 5l7 7-7 7")} الرجوع للرئيسية</a><span class="ctag" style="--g:${G[x.c]}">${x.c}</span><div class="banner">${esc(x.banner)}</div><h1 class="at">${esc(x.t)}</h1><div class="abody">${body}</div>${x.pray?`<div class="pray">${esc(x.pray)}</div>`:""}<a class="back" href="#">${arrow.replace("M19 12H5M12 19l-7-7 7-7","M5 12h14M12 5l7 7-7 7")} الرجوع للرئيسية</a>`;
 }
 function route(){
