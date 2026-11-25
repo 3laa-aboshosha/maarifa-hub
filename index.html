@@ -231,6 +231,28 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
 @media(prefers-reduced-motion:reduce){.lgshine,.lgglow,.lgdash{animation:none}}
 .digits,.mclock{white-space:nowrap}.mclock{flex-shrink:0}.mclock .digits{font-size:14px;letter-spacing:.02em}.brand{min-width:0}@media(max-width:400px){.top{gap:6px!important}.brand h1{font-size:21px!important;white-space:nowrap}.mclock{padding:5px 7px}.mclock .digits{font-size:13px}.logo{width:48px!important;height:52px!important}}
 .vc{display:flex;align-items:center;justify-content:center;gap:8px;width:max-content;max-width:100%;margin:14px auto 10px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(59,130,246,.08);color:var(--mut);font-size:13px}.vc[hidden]{display:none}.vc b{color:var(--acc2);font-size:15px}
+.askbar.ad{background:linear-gradient(135deg,#047857,#b45309);box-shadow:0 8px 24px -10px rgba(16,185,129,.55)}
+@media(min-width:701px){.askbar.ad{flex:1 1 280px}}
+@media(max-width:700px){.askwrap{flex-wrap:wrap!important}.askbar.ad{flex:1 1 100%}.askbar.ad small{display:block;font-size:11px}}
+.adh1{font-size:24px;margin:10px 0 12px}
+.adtabs{display:flex;gap:8px;margin:0 0 14px}.adtabs button{flex:1;font:inherit;font-weight:700;color:#b7c4e6;background:#0f1a3d;border:1px solid #1e3170;border-radius:12px;padding:10px 6px;cursor:pointer}.adtabs button.on{color:#fff;background:linear-gradient(135deg,#047857,#2563eb);border-color:transparent}
+.adchips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.adchips button,.adgoal button{font:inherit;font-size:14px;color:#cfe0ff;background:#0f1a3d;border:1px solid #1e3170;border-radius:99px;padding:7px 14px;cursor:pointer}.adchips button.on,.adgoal button.on{color:#fff;background:#1d4ed8;border-color:#3b82f6}
+.adchips.two button{flex:1}
+.adgoal{display:flex;align-items:center;gap:8px;color:#8fa0c7;font-size:14px;margin:0 0 16px}
+.adtap{--p:0;display:grid;place-items:center;align-content:center;gap:4px;width:210px;height:210px;margin:6px auto 12px;border-radius:50%;border:0;cursor:pointer;color:#fff;font:inherit;background:radial-gradient(circle,#0b1230 62%,transparent 63%),conic-gradient(#10b981 calc(var(--p)*1%),#16224d 0);-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none}
+.adtap:active{transform:scale(.97)}
+.adn{font-size:56px;font-weight:800;line-height:1}.adl{font-size:16px;color:#b7c4e6}
+.adinfo{text-align:center;color:#fbbf24;min-height:24px}
+.adact{text-align:center;margin:8px 0}.adreset{font:inherit;color:#fff;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:10px 20px;cursor:pointer}
+.adnote{color:#8fa0c7;font-size:13px;line-height:1.8;margin:10px 0}
+.adc{background:#0f1a3d;border:1px solid #1e3170;border-radius:14px;padding:12px 14px;margin:0 0 12px}.adc.fin{opacity:.6;border-color:#166534}
+.adh{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:8px}.adrep{font-size:12px;color:#fbbf24;background:rgba(251,191,36,.12);border-radius:99px;padding:2px 10px}
+.adx{font-size:19px;line-height:2.2;color:#f1f5ff}
+.ads{font-size:12px;color:#8fa0c7;margin:8px 0}
+.adread{font:inherit;font-weight:700;color:#fff;border:0;border-radius:10px;padding:9px 16px;cursor:pointer;background:linear-gradient(135deg,#047857,#2563eb)}
+.adtoast{position:fixed;inset-inline:12px;bottom:16px;max-width:420px;margin-inline:auto;z-index:60;background:#0b1a3a;border:1px solid #10b981;border-radius:16px;padding:12px 16px;box-shadow:0 12px 40px -10px #000;transform:translateY(160%);transition:transform .4s;text-align:center}
+.adtoast.on{transform:none}.adt-l{font-size:12px;color:#34d399}.adt-x{font-size:20px;line-height:2;color:#fff}.adt-c{font:inherit;font-size:13px;color:#b7c4e6;background:none;border:1px solid #334155;border-radius:99px;padding:3px 14px;cursor:pointer}
+@media(prefers-reduced-motion:reduce){.adtoast{transition:none}}
 </style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0b1230"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="موسوعة المعرفة"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="icon" href="assets/1-appicon192.png"><link rel="apple-touch-icon" href="assets/2-appicon512.png"></head>
 <body>
 <div class="wrap">
@@ -255,7 +277,7 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
   <label class="nsearch"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="ابحث عن موضوع..." autocomplete="off"></label>
 </nav>
 
-<div class="askwrap"><a class="askbar" href="https://t.me/Alaa_Aboshosha12" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .7-1 1.4M12 16h.01"/></svg><span><b>اسأل في التقنية</b><small>اكتب سؤالك وهتوصلك الإجابة على تليجرام</small></span></a><a class="askbar qz" href="#/quiz"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span><b>اختبر أمانك</b><small>10 أسئلة سريعة وتعرف نتيجتك</small></span></a></div><div class="tipcard" id="tip" hidden><div class="tic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div><div><b>نصيحة اليوم</b><p id="tipT"></p><a id="tipL" hidden>اقرأ الموضوع ←</a></div></div>
+<div class="askwrap"><a class="askbar" href="https://t.me/Alaa_Aboshosha12" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .7-1 1.4M12 16h.01"/></svg><span><b>اسأل في التقنية</b><small>اكتب سؤالك وهتوصلك الإجابة على تليجرام</small></span></a><a class="askbar qz" href="#/quiz"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span><b>اختبر أمانك</b><small>10 أسئلة سريعة وتعرف نتيجتك</small></span></a><a class="askbar ad" href="#/adhkar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>الأذكار والتسبيح</b><small>مسبحة وأذكار الصباح والمساء وتذكير</small></span></a></div><div class="tipcard" id="tip" hidden><div class="tic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div><div><b>نصيحة اليوم</b><p id="tipT"></p><a id="tipL" hidden>اقرأ الموضوع ←</a></div></div>
 
 <div class="layout">
   <main>
@@ -432,6 +454,115 @@ function show(){
 }
 window.addEventListener("hashchange",show);show();
 })();
-</script><script>(function(){const T=[["استخدم كلمة سر طويلة: جملة من 4 كلمات عشوائية أو أكتر أقوى وأسهل في الحفظ من كلمة قصيرة معقدة.", ""], ["متستخدمش نفس كلمة السر في أكتر من حساب. لو موقع واحد اتسرب، المخترق هيجرّبها على باقي حساباتك.", ""], ["مدير كلمات المرور يحفظ لك كلمة سر مختلفة لكل حساب، وإنت تفتكر واحدة بس.", ""], ["فعّل التحقق بخطوتين على الإيميل وفيسبوك وواتساب. ده أهم حاجة تحمي بيها حساباتك بعد كلمة السر.", ""], ["التحقق بخطوتين عن طريق تطبيق مصادقة أو مفتاح أمان أقوى من كود الـ SMS.", ""], ["أي حد يطلب منك كود التفعيل (OTP) على التليفون، حتى لو قال إنه من البنك: ده نصاب. البنك عمره ما بيطلبه.", ""], ["لو جاتلك مكالمة من 'البنك' أو 'الشركة'، اقفل وكلّمهم إنت من الرقم الرسمي المكتوب على الكارت أو الموقع.", ""], ["متضغطش على رابط جاي في رسالة غير متوقعة. ادخل على الموقع أو التطبيق بنفسك من المتصفح.", ""], ["اقرا عنوان الموقع كويس قبل ما تكتب أي بيانات. مواقع النصب بتغيّر حرف واحد في الاسم المعروف.", ""], ["اتأكد إن الموقع بيبدأ بـ https، بس خد بالك: ده لوحده مش ضمان إن الموقع أصلي.", ""], ["ركّب التطبيقات من المتجر الرسمي بس (جوجل بلاي أو App Store)، وبلاش ملفات APK من مصادر مجهولة.", ""], ["قبل ما تثبّت أي تطبيق، شوف الصلاحيات اللي بيطلبها. تطبيق كشاف مش محتاج يوصل لجهات اتصالك ورسايلك.", ""], ["حدّث تليفونك والتطبيقات أول بأول. التحديثات بتقفل ثغرات المخترقين بيستغلوها.", "#/t/phone-protect"], ["اعمل قفل شاشة قوي: رمز من 6 أرقام على الأقل أو بصمة، مش تاريخ ميلادك أو 1234.", "#/t/phone-protect"], ["خلّي ميزة 'العثور على جهازي' شغالة في تليفونك. لو ضاع تقدر تقفله وتمسح بياناته عن بُعد.", ""], ["خد نسخة احتياطية من صورك وملفاتك المهمة بانتظام، عشان لو التليفون اتسرق أو اتعطل متخسرش حاجة.", ""], ["متستخدمش واي فاي عام (كافيه أو مطار) في الدخول على البنك أو حسابات مهمة. استخدم داتا الموبايل.", ""], ["اقفل البلوتوث والواي فاي لما مش محتاجهم، وامسح شبكات الواي فاي العامة اللي اتصلت بيها قبل كده.", ""], ["اشحن موبايلك من الشاحن الخاص بيك. محطات الشحن العامة ممكن تتلاعب ببيانات الجهاز.", ""], ["راجع الخطوط والمحافظ الإلكترونية المسجلة باسمك من تطبيق My NTRA، وقدّم شكوى على أي رقم مش بتاعك.", "#/t/my-ntra"], ["حدّث تطبيق My NTRA وراجع الخطوط المسجلة باسمك كل فترة.", "#/t/my-ntra"], ["لو اشتريت آيفون مستعمل، اتأكد من رقم IMEI قبل الدفع عشان تعرف حالته.", "#/t/imei-iphone"], ["لو رقم IMEI بتاع الجهاز طلع مبلّغ عنه إنه مسروق أو محظور، متشتريهوش.", "#/t/imei-iphone"], ["برنامج حماية موثوق على الموبايل والكمبيوتر بيكشف الروابط المشبوهة والتصيد قبل ما تفتحها.", "#/t/bitdefender-total-security"], ["متفتحش مرفقات إيميل من حد متعرفوش، خصوصًا ملفات zip وexe وملفات أوفيس اللي بتطلب 'تفعيل المحتوى'.", ""], ["لو وصلتك رسالة مستعجلة 'حسابك هيتقفل خلال ساعة'، خد نفس عميق: ده أسلوب نصابين عشان تتصرف من غير تفكير.", ""], ["متبعتش صورة البطاقة أو الباسبور أو كارت البنك لحد على واتساب، حتى لو شخص تعرفه حساب بتاعه اتسرق.", ""], ["لو صاحبك طلب منك فلوس على ماسنجر أو واتساب، كلّمه تليفون الأول. حسابه ممكن يكون مخترق.", ""], ["متشاركش كود التحقق اللي وصلك على واتساب مع أي حد. الكود ده هو مفتاح حسابك.", ""], ["خلّي حساباتك على السوشيال ميديا خاصة، وراجع مين يقدر يشوف صورك ومعلوماتك.", ""], ["استخدم إيميل منفصل للتسجيل في المواقع والعروض، وإيميل تاني للحاجات المهمة زي البنك.", ""], ["لو شكيت إن حسابك اتخترق: غيّر كلمة السر فورًا، وسجّل خروج من كل الأجهزة، وفعّل التحقق بخطوتين.", ""], ["قبل ما تبيع أو تتخلص من تليفونك القديم، اعمل ريسيت للمصنع وسجّل خروج من حساباتك.", ""], ["متكتبش كلمة السر في ملاحظات الموبايل أو رسائل واتساب لنفسك.", ""], ["لو إعلان بيقولك 'كسبت جايزة' أو 'خصم 90%' ومحتاج بياناتك أو بطاقتك: اعتبره نصب لحد ما يثبت العكس.", ""], ["اشتري من مواقع ومتاجر معروفة، وادفع بكارت افتراضي أو عند الاستلام لو الموقع جديد عليك.", ""], ["خد لقطة شاشة للمحادثات والإيصالات لما تتعرض لنصب، وبلّغ البنك أو الجهة المختصة بسرعة.", ""]];const e=document.getElementById("tip");if(!e)return;const d=new Date();const n=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);const t=T[n%T.length];document.getElementById("tipT").textContent=t[0];const a=document.getElementById("tipL");if(t[1]){a.href=t[1];a.hidden=false}function v(){e.hidden=/^#\/(t|quiz)/.test(location.hash)}window.addEventListener("hashchange",v);v()})();</script><script>(function(){fetch("https://alaa-maarif.goatcounter.com/counter/TOTAL.json").then(r=>r.ok?r.json():Promise.reject()).then(j=>{const n=parseInt(String(j.count).replace(/[^0-9]/g,""),10);if(isNaN(n))return;document.getElementById("vcn").textContent=n.toLocaleString("ar-EG");document.getElementById("vc").hidden=false}).catch(()=>{})})();</script>
+</script><script>(function(){const T=[["استخدم كلمة سر طويلة: جملة من 4 كلمات عشوائية أو أكتر أقوى وأسهل في الحفظ من كلمة قصيرة معقدة.", ""], ["متستخدمش نفس كلمة السر في أكتر من حساب. لو موقع واحد اتسرب، المخترق هيجرّبها على باقي حساباتك.", ""], ["مدير كلمات المرور يحفظ لك كلمة سر مختلفة لكل حساب، وإنت تفتكر واحدة بس.", ""], ["فعّل التحقق بخطوتين على الإيميل وفيسبوك وواتساب. ده أهم حاجة تحمي بيها حساباتك بعد كلمة السر.", ""], ["التحقق بخطوتين عن طريق تطبيق مصادقة أو مفتاح أمان أقوى من كود الـ SMS.", ""], ["أي حد يطلب منك كود التفعيل (OTP) على التليفون، حتى لو قال إنه من البنك: ده نصاب. البنك عمره ما بيطلبه.", ""], ["لو جاتلك مكالمة من 'البنك' أو 'الشركة'، اقفل وكلّمهم إنت من الرقم الرسمي المكتوب على الكارت أو الموقع.", ""], ["متضغطش على رابط جاي في رسالة غير متوقعة. ادخل على الموقع أو التطبيق بنفسك من المتصفح.", ""], ["اقرا عنوان الموقع كويس قبل ما تكتب أي بيانات. مواقع النصب بتغيّر حرف واحد في الاسم المعروف.", ""], ["اتأكد إن الموقع بيبدأ بـ https، بس خد بالك: ده لوحده مش ضمان إن الموقع أصلي.", ""], ["ركّب التطبيقات من المتجر الرسمي بس (جوجل بلاي أو App Store)، وبلاش ملفات APK من مصادر مجهولة.", ""], ["قبل ما تثبّت أي تطبيق، شوف الصلاحيات اللي بيطلبها. تطبيق كشاف مش محتاج يوصل لجهات اتصالك ورسايلك.", ""], ["حدّث تليفونك والتطبيقات أول بأول. التحديثات بتقفل ثغرات المخترقين بيستغلوها.", "#/t/phone-protect"], ["اعمل قفل شاشة قوي: رمز من 6 أرقام على الأقل أو بصمة، مش تاريخ ميلادك أو 1234.", "#/t/phone-protect"], ["خلّي ميزة 'العثور على جهازي' شغالة في تليفونك. لو ضاع تقدر تقفله وتمسح بياناته عن بُعد.", ""], ["خد نسخة احتياطية من صورك وملفاتك المهمة بانتظام، عشان لو التليفون اتسرق أو اتعطل متخسرش حاجة.", ""], ["متستخدمش واي فاي عام (كافيه أو مطار) في الدخول على البنك أو حسابات مهمة. استخدم داتا الموبايل.", ""], ["اقفل البلوتوث والواي فاي لما مش محتاجهم، وامسح شبكات الواي فاي العامة اللي اتصلت بيها قبل كده.", ""], ["اشحن موبايلك من الشاحن الخاص بيك. محطات الشحن العامة ممكن تتلاعب ببيانات الجهاز.", ""], ["راجع الخطوط والمحافظ الإلكترونية المسجلة باسمك من تطبيق My NTRA، وقدّم شكوى على أي رقم مش بتاعك.", "#/t/my-ntra"], ["حدّث تطبيق My NTRA وراجع الخطوط المسجلة باسمك كل فترة.", "#/t/my-ntra"], ["لو اشتريت آيفون مستعمل، اتأكد من رقم IMEI قبل الدفع عشان تعرف حالته.", "#/t/imei-iphone"], ["لو رقم IMEI بتاع الجهاز طلع مبلّغ عنه إنه مسروق أو محظور، متشتريهوش.", "#/t/imei-iphone"], ["برنامج حماية موثوق على الموبايل والكمبيوتر بيكشف الروابط المشبوهة والتصيد قبل ما تفتحها.", "#/t/bitdefender-total-security"], ["متفتحش مرفقات إيميل من حد متعرفوش، خصوصًا ملفات zip وexe وملفات أوفيس اللي بتطلب 'تفعيل المحتوى'.", ""], ["لو وصلتك رسالة مستعجلة 'حسابك هيتقفل خلال ساعة'، خد نفس عميق: ده أسلوب نصابين عشان تتصرف من غير تفكير.", ""], ["متبعتش صورة البطاقة أو الباسبور أو كارت البنك لحد على واتساب، حتى لو شخص تعرفه حساب بتاعه اتسرق.", ""], ["لو صاحبك طلب منك فلوس على ماسنجر أو واتساب، كلّمه تليفون الأول. حسابه ممكن يكون مخترق.", ""], ["متشاركش كود التحقق اللي وصلك على واتساب مع أي حد. الكود ده هو مفتاح حسابك.", ""], ["خلّي حساباتك على السوشيال ميديا خاصة، وراجع مين يقدر يشوف صورك ومعلوماتك.", ""], ["استخدم إيميل منفصل للتسجيل في المواقع والعروض، وإيميل تاني للحاجات المهمة زي البنك.", ""], ["لو شكيت إن حسابك اتخترق: غيّر كلمة السر فورًا، وسجّل خروج من كل الأجهزة، وفعّل التحقق بخطوتين.", ""], ["قبل ما تبيع أو تتخلص من تليفونك القديم، اعمل ريسيت للمصنع وسجّل خروج من حساباتك.", ""], ["متكتبش كلمة السر في ملاحظات الموبايل أو رسائل واتساب لنفسك.", ""], ["لو إعلان بيقولك 'كسبت جايزة' أو 'خصم 90%' ومحتاج بياناتك أو بطاقتك: اعتبره نصب لحد ما يثبت العكس.", ""], ["اشتري من مواقع ومتاجر معروفة، وادفع بكارت افتراضي أو عند الاستلام لو الموقع جديد عليك.", ""], ["خد لقطة شاشة للمحادثات والإيصالات لما تتعرض لنصب، وبلّغ البنك أو الجهة المختصة بسرعة.", ""]];const e=document.getElementById("tip");if(!e)return;const d=new Date();const n=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);const t=T[n%T.length];document.getElementById("tipT").textContent=t[0];const a=document.getElementById("tipL");if(t[1]){a.href=t[1];a.hidden=false}function v(){e.hidden=/^#\/(t|quiz|adhkar)/.test(location.hash)}window.addEventListener("hashchange",v);v()})();</script><script>(function(){fetch("https://alaa-maarif.goatcounter.com/counter/TOTAL.json").then(r=>r.ok?r.json():Promise.reject()).then(j=>{const n=parseInt(String(j.count).replace(/[^0-9]/g,""),10);if(isNaN(n))return;document.getElementById("vcn").textContent=n.toLocaleString("ar-EG");document.getElementById("vc").hidden=false}).catch(()=>{})})();</script>
 <script data-goatcounter="https://alaa-maarif.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>(function(){
+const $=id=>document.getElementById(id);
+const E=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ar=n=>String(n).replace(/\d/g,d=>"٠١٢٣٤٥٦٧٨٩"[d]);
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const PH=["سبحان الله","الحمد لله","الله أكبر","لا إله إلا الله","أستغفر الله","سبحان الله وبحمده","لا حول ولا قوة إلا بالله"];
+const AYAT="اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ";
+const IKH="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ\nاللَّهُ الصَّمَدُ\nلَمْ يَلِدْ وَلَمْ يُولَدْ\nوَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ";
+const FLQ="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ\nمِنْ شَرِّ مَا خَلَقَ\nوَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ\nوَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ\nوَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ";
+const NAS="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ\nمَلِكِ النَّاسِ\nإِلَٰهِ النَّاسِ\nمِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ\nالَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ\nمِنَ الْجِنَّةِ وَالنَّاسِ";
+const REST="لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ";
+const SABAH="أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ\n"+REST+"\nرَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ\nوَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ\nرَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ\nرَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ";
+const MASA="أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ\n"+REST+"\nرَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا\nوَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا\nرَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ\nرَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ";
+const SAYYID="اللَّهُمَّ أَنْتَ رَبِّي، لَا إِلَٰهَ إِلَّا أَنْتَ\nخَلَقْتَنِي وَأَنَا عَبْدُكَ\nوَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ\nأَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ\nأَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي\nفَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ";
+const BISM="بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ\nفِي الْأَرْضِ وَلَا فِي السَّمَاءِ\nوَهُوَ السَّمِيعُ الْعَلِيمُ";
+const KAL="أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ\nمِنْ شَرِّ مَا خَلَقَ";
+const COMMON=[
+{t:"آية الكرسي",x:AYAT,n:1,s:"القرآن ٢:٢٥٥ · حصن المسلم ٧٥"},
+{t:"الإخلاص",x:IKH,n:3,s:"القرآن ١١٢ · أبو داود ٥٠٨٢ · الترمذي ٣٥٧٥ · حصن المسلم ٧٦"},
+{t:"الفلق",x:FLQ,n:3,s:"القرآن ١١٣ · أبو داود ٥٠٨٢ · الترمذي ٣٥٧٥ · حصن المسلم ٧٦"},
+{t:"الناس",x:NAS,n:3,s:"القرآن ١١٤ · أبو داود ٥٠٨٢ · الترمذي ٣٥٧٥ · حصن المسلم ٧٦"}
+];
+const AFTER=[
+{t:"سيد الاستغفار",x:SAYYID,n:1,s:"البخاري ٦٣٠٦ · حصن المسلم ٧٩"},
+{t:"بسم الله الذي لا يضر مع اسمه شيء",x:BISM,n:3,s:"أبو داود ٥٠٨٨ · الترمذي ٣٣٨٨ · حصن المسلم ٨٦"}
+];
+const TAIL={t:"سبحان الله وبحمده",x:"سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",n:100,s:"حصن المسلم"};
+const MORN=COMMON.concat([{t:"أصبحنا وأصبح الملك لله",x:SABAH,n:1,s:"مسلم ٢٧٢٣ · حصن المسلم ٧٧"}],AFTER,[TAIL]);
+const EVE=COMMON.concat([{t:"أمسينا وأمسى الملك لله",x:MASA,n:1,s:"مسلم ٢٧٢٣ · حصن المسلم ٧٧"}],AFTER,[{t:"أعوذ بكلمات الله التامات",x:KAL,n:3,s:"مسلم ٢٧٠٩ · الترمذي ٣٦٠٤ · حصن المسلم ٩٧"},TAIL]);
+const SHORT=["سُبْحَانَ اللَّهِ وَبِحَمْدِهِ","أَسْتَغْفِرُ اللَّهَ","لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ","سُبْحَانَ اللَّهِ الْعَظِيمِ","لَا إِلَٰهَ إِلَّا اللَّهُ","اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَىٰ نَبِيِّنَا مُحَمَّدٍ","الْحَمْدُ لِلَّهِ","اللَّهُ أَكْبَرُ"];
+/* reminder (works on any page while the site is open) */
+let rem=LS.get("ad_rem",0),lastShow=LS.get("ad_last",Date.now()),ri=0;
+function toast(txt){
+ let t=$("adToast");if(!t){t=document.createElement("div");t.id="adToast";t.className="adtoast";document.body.appendChild(t)}
+ t.innerHTML=`<div class="adt-l">تذكير بالذكر</div><div class="adt-x">${E(txt)}</div><button type="button" class="adt-c" aria-label="إغلاق">إغلاق</button>`;
+ t.classList.add("on");t.querySelector("button").onclick=()=>t.classList.remove("on");
+ clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("on"),20000);
+}
+function tick(){
+ if(!rem||document.hidden)return;
+ if(Date.now()-lastShow>=rem*60000){lastShow=Date.now();LS.set("ad_last",lastShow);toast(SHORT[Math.floor(Math.random()*SHORT.length)])}
+}
+setInterval(tick,30000);
+document.addEventListener("visibilitychange",tick);
+/* page */
+let tab="tasbeeh";
+function counts(){return LS.get("ad_cnt",{})}
+function render(){
+ const box=$("adBox");if(!box)return;
+ const tabs=[["tasbeeh","التسبيح"],["adhkar","الأذكار"],["remind","التذكير"]];
+ let h=`<div class="adtabs">${tabs.map(([k,l])=>`<button type="button" class="${tab===k?"on":""}" data-k="${k}">${l}</button>`).join("")}</div>`;
+ if(tab==="tasbeeh")h+=tasb();else if(tab==="adhkar")h+=adhk();else h+=remh();
+ box.innerHTML=h;
+ box.querySelectorAll(".adtabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.k;render()});
+ if(tab==="tasbeeh")bindT();else if(tab==="adhkar")bindA();else bindR();
+}
+let ph=LS.get("ad_ph",0),goal=LS.get("ad_goal",33);
+function tasb(){
+ const c=counts()[PH[ph]]||0,p=goal?Math.min(100,c%goal/goal*100):0,r=goal?Math.floor(c/goal):0;
+ return `<div class="adchips">${PH.map((t,i)=>`<button type="button" class="${i===ph?"on":""}" data-i="${i}">${t}</button>`).join("")}</div>
+<div class="adgoal">الهدف: ${[33,100,0].map(g=>`<button type="button" class="${g===goal?"on":""}" data-g="${g}">${g?ar(g):"مفتوح"}</button>`).join("")}</div>
+<button type="button" class="adtap" id="adTap" style="--p:${p}"><span class="adn" id="adN">${ar(c)}</span><span class="adl">${PH[ph]}</span></button>
+<div class="adinfo" id="adInfo">${goal&&r?`أكملت ${ar(r)} ${r===1?"دورة":"دورات"} من ${ar(goal)}`:"&nbsp;"}</div>
+<div class="adact"><button type="button" class="adreset" id="adReset">تصفير العدّاد</button></div>
+<p class="adnote">العدّاد بيتحفظ على جهازك بس، ومفيش حاجة بتتبعت لأي حد.</p>`;
+}
+function bindT(){
+ document.querySelectorAll(".adchips button").forEach(b=>b.onclick=()=>{ph=+b.dataset.i;LS.set("ad_ph",ph);render()});
+ document.querySelectorAll(".adgoal button").forEach(b=>b.onclick=()=>{goal=+b.dataset.g;LS.set("ad_goal",goal);render()});
+ $("adTap").onclick=()=>{
+  const m=counts(),k=PH[ph];m[k]=(m[k]||0)+1;LS.set("ad_cnt",m);
+  const c=m[k];$("adN").textContent=ar(c);
+  $("adTap").style.setProperty("--p",goal?Math.min(100,(c%goal||goal)/goal*100):0);
+  if(goal&&c%goal===0){try{navigator.vibrate&&navigator.vibrate([60,40,60])}catch(e){}$("adInfo").textContent=`أكملت ${ar(c/goal)} ${c/goal===1?"دورة":"دورات"} من ${ar(goal)} 🌟`}
+  else{try{navigator.vibrate&&navigator.vibrate(12)}catch(e){}}
+ };
+ $("adReset").onclick=()=>{const m=counts();m[PH[ph]]=0;LS.set("ad_cnt",m);render()};
+}
+let sess=(new Date().getHours()<15)?"m":"e",done={};
+function adhk(){
+ const L=sess==="m"?MORN:EVE;
+ return `<div class="adchips two"><button type="button" class="${sess==="m"?"on":""}" data-s="m">أذكار الصباح</button><button type="button" class="${sess==="e"?"on":""}" data-s="e">أذكار المساء</button></div>
+<p class="adnote">النصوص من حصن المسلم وصحيح البخاري ومسلم وسنن أبي داود والترمذي، والآيات من المصحف. اضغط على «اقرأتها» لتعدّ المرات.</p>
+${L.map((d,i)=>{const key=sess+i,left=done[key]===undefined?d.n:done[key];return `<div class="adc ${left===0?"fin":""}"><div class="adh"><b>${E(d.t)}</b>${d.n>1?`<span class="adrep">${ar(d.n)} مرات</span>`:""}</div><div class="adx">${E(d.x).replace(/\n/g,"<br>")}</div><div class="ads">${E(d.s)}</div><button type="button" class="adread" data-k="${key}" data-n="${d.n}">${left===0?"تمّت ✅":d.n>1?`اقرأتها (متبقي ${ar(left)})`:"اقرأتها"}</button></div>`}).join("")}`;
+}
+function bindA(){
+ document.querySelectorAll(".adchips button").forEach(b=>b.onclick=()=>{sess=b.dataset.s;done={};render()});
+ document.querySelectorAll(".adread").forEach(b=>b.onclick=()=>{const k=b.dataset.k,n=+b.dataset.n;const left=done[k]===undefined?n:done[k];if(left>0)done[k]=left-1;render()});
+}
+function remh(){
+ return `<p class="adnote">التذكير بيظهر كبطاقة صغيرة وانت فاتح الموقع بس. لو قفلت الموقع أو الشاشة مش هيوصلك تنبيه.</p>
+<div class="adchips"><button type="button" class="${rem===0?"on":""}" data-m="0">إيقاف</button>${[5,15,30,60].map(m=>`<button type="button" class="${rem===m?"on":""}" data-m="${m}">كل ${ar(m)} دقيقة</button>`).join("")}</div>
+<div class="adact"><button type="button" class="adreset" id="adTry">جرّب تذكير دلوقتي</button></div>
+<p class="adnote">${rem?`التذكير شغال: كل ${ar(rem)} دقيقة.`:"التذكير متوقف."}</p>`;
+}
+function bindR(){
+ document.querySelectorAll(".adchips button").forEach(b=>b.onclick=()=>{rem=+b.dataset.m;LS.set("ad_rem",rem);lastShow=Date.now();LS.set("ad_last",lastShow);render()});
+ $("adTry").onclick=()=>toast(SHORT[Math.floor(Math.random()*SHORT.length)]);
+}
+function show(){
+ if(location.hash!=="#/adhkar")return;
+ $("art").hidden=false;$("secHead").hidden=true;$("grid").hidden=true;$("hero").hidden=true;$("cover").hidden=true;
+ $("art").innerHTML=`<a class="back" href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg> الرجوع للرئيسية</a><h1 class="adh1">الأذكار والتسبيح</h1><div id="adBox"></div>`;
+ document.title="الأذكار والتسبيح | موسوعة المعرفة";
+ render();window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",show);show();
+})();
+</script>
 </body></html>
