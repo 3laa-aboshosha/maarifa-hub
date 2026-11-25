@@ -144,6 +144,28 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
 }
 .mclock{display:none;align-items:center;gap:6px;padding:6px 10px;border-radius:12px;background:linear-gradient(180deg,#0e1a40,#091128);border:1px solid #2b4a9a;box-shadow:0 0 14px rgba(59,130,246,.25)}
 .mclock .digits{font-size:15px;letter-spacing:.04em}
+
+.topic{background:#0b1230;border:1px solid #1b2a5a;border-radius:16px;padding:26px 28px;line-height:2}
+.topic[hidden],#hero[hidden],#secHead[hidden],#grid[hidden]{display:none}
+.topic .back{display:inline-flex;align-items:center;gap:6px;color:#60a5fa;font-weight:700;font-size:14px;text-decoration:none;margin:0 0 14px}
+.topic .back:last-child{margin:22px 0 0}
+.topic .ctag{display:inline-block;margin-inline-start:10px}
+.topic .banner{margin:10px 0 4px;color:#fbbf24;font-weight:700;font-size:14px}
+.topic .at{font-size:28px;line-height:1.5;margin:6px 0 16px;color:#fff}
+.topic .abody p{margin:0 0 14px;color:#cbd5e1;font-size:16.5px}
+.topic .abody h3{margin:26px 0 10px;font-size:20px;color:#93c5fd;padding-inline-start:12px;border-inline-start:4px solid #3b82f6}
+.topic .step{display:flex;gap:14px;align-items:flex-start;background:#0f1a3d;border:1px solid #1e3170;border-radius:12px;padding:12px 16px;margin:0 0 10px}
+.topic .step .num{flex:0 0 34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;display:grid;place-items:center;font-weight:800;margin-top:4px}
+.topic .step p{margin:0;color:#e2e8f0}
+.topic .abody p.note{background:#10204a;border-inline-start:4px solid #f59e0b;border-radius:10px;padding:10px 14px;color:#e2e8f0}
+.topic .srcl{display:inline-block;margin:10px 0;color:#60a5fa;font-weight:700;text-decoration:none;direction:rtl}
+.topic .pray{text-align:center;margin:18px 0 4px;color:#a7f3d0;font-size:18px}
+@media(max-width:700px){.topic{padding:16px 14px}.topic .at{font-size:22px}.topic .abody p{font-size:15.5px}.topic .abody h3{font-size:17px}}
+.ctag,.tag{border-radius:14px!important;line-height:1.5}
+
+.topic .abody p.note.warn{border-inline-start-color:#ef4444;background:#2a1020}
+.topic .applink{display:flex;flex-direction:column;gap:2px;background:#0f1a3d;border:1px solid #2b4aa8;border-radius:12px;padding:10px 16px;margin:0 0 10px;color:#93c5fd;font-weight:700;text-decoration:none}
+.topic .applink small{color:#64748b;font-weight:400;text-align:right}
 </style></head>
 <body>
 <div class="wrap">
@@ -171,7 +193,8 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
 <div class="layout">
   <main>
     <section class="hero" id="hero" aria-label="موضوع مميز"></section>
-    <div class="sec-head"><h2>كل المواضيع</h2><span class="cnt" id="count"></span></div>
+    <article class="topic" id="art" hidden></article>
+    <div class="sec-head" id="secHead"><h2>كل المواضيع</h2><span class="cnt" id="count"></span></div>
     <div class="grid" id="grid"></div>
   </main>
   <aside>
@@ -207,15 +230,184 @@ lock:S('<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0
 block:S('<circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/>'),
 home:S('<path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/>')
 };
-const G={"الهاتف":"linear-gradient(135deg,#2563eb,#06b6d4)","الحماية":"linear-gradient(135deg,#4f46e5,#9333ea)","الخصوصية":"linear-gradient(135deg,#db2777,#f97316)"};
-const CATICON={"الهاتف":"phone","الحماية":"shield","الخصوصية":"lock"};
-// عناوين تجريبية. استبدل "#" بلينك المنشور الحقيقي لكل موضوع
+const G={"كيف تحمي نفسك وهاتفك من الاختراق":"linear-gradient(135deg,#4f46e5,#9333ea)","الهاتف":"linear-gradient(135deg,#2563eb,#06b6d4)","الحماية":"linear-gradient(135deg,#4f46e5,#9333ea)","الخصوصية":"linear-gradient(135deg,#db2777,#f97316)"};
+const CATICON={"كيف تحمي نفسك وهاتفك من الاختراق":"shield","الهاتف":"phone","الحماية":"shield","الخصوصية":"lock"};
 const topics=[
-{t:"ريكفري الهاتف",c:"الهاتف",i:"refresh",d:"إزاي تستعيد بيانات هاتفك وتفتح وضع الريكفري.",u:"#"},
-{t:"IMEI",c:"الهاتف",i:"chip",d:"إيه هو رقم IMEI وإزاي تتأكد منه وتحمي جهازك.",u:"#"},
-{t:"Facebook Protect",c:"الحماية",i:"shield",d:"فعّل حماية حساب فيسبوك من الاختراق.",u:"#"},
-{t:"Bitdefender",c:"الحماية",i:"lock",d:"مراجعة وطريقة استخدام برنامج الحماية Bitdefender.",u:"#"},
-{t:"حظر الإعلانات",c:"الخصوصية",i:"block",d:"إزاي تمنع الإعلانات المزعجة على الهاتف والمتصفح.",u:"#"}
+ {
+  "id": "phone-protect",
+  "t": "كيف تحمي هاتفك من الاختراق؟",
+  "c": "كيف تحمي نفسك وهاتفك من الاختراق",
+  "i": "shield",
+  "d": "خطوات ونصائح بسيطة تحمي بها هاتفك وحساباتك من الاختراق والتجسس.",
+  "banner": "✅✍موضوع مهم جداً 🚨 🔰Protection🔰",
+  "blocks": [
+   [
+    "p",
+    "انتشرت، في الفترة الماضية، حوادث اختراق الهواتف المحمولة، مما عرض كثير من المستخدمين لانتهاك الخصوصية وعمليات ابتزاز ارتقت لجرائم يحاسب عليها القانون ."
+   ],
+   [
+    "p",
+    "ويلجأ الهاكر إلى حيل بسيطة وثغرات لا تخطر على البال لاختراق الهواتف والأجهزة الذكية عن طريق البرمجيات والتطبيقات الخبيثة، والتي تساعدهم في الوصول إلى العديد من بيانات الهاتف والبيانات الشخصية للمستخدم ."
+   ],
+   [
+    "p",
+    "إلا أنه يمكن تلاشي ذلك وحماية هاتفك من الاختراق والتجسس من قبل القراصنة عن طريق اتباع بعض الخطوات والنصائح التي تجنبك الوقوع في هذه الأزمات ."
+   ],
+   [
+    "h",
+    "خطوات حماية هاتفك من الاختراق 🔐"
+   ],
+   [
+    "s",
+    1,
+    "في البداية عليك استخدام كلمة سر لحماية هاتفك المحمول ويفضل اختيار رقم سري (PIN) قوي لا يقل عن 6 أرقام أو كلمة مرور، وتجنب الأرقام السهلة التي يمكن تخمينها ."
+   ],
+   [
+    "s",
+    2,
+    "تجنب تنزيل تطبيقات على الهاتف تماما إلا من مصادرة معلومة ومعروفة وموثوق بها، التحذير من استخدام برامج واتساب الذهبي ولا غيره، فانها \" غير محمية \""
+   ],
+   [
+    "s",
+    3,
+    "التأكد من جوجل بلاي بأن التطبيق آمن للاستخدام عن طريق الاطلاع على معلوماته ."
+   ],
+   [
+    "s",
+    4,
+    "التحذير من الضغط على أي لينكات يتم إرسالها لك حتى من أصدقائك ومهما كان درجة ثقتك به ."
+   ],
+   [
+    "h",
+    "كيفية تأمين نفسك من التطبيقات مجهولة المصادر ."
+   ],
+   [
+    "p",
+    "إنه عليك التأكيد على الخصائص أو الصالحيات التي يحصل عليها التطبيق الذي قمت بتنزيله على الهاتف، فهناك درجة من درجات السرية مثل السماح بفتح الكاميرا والوصول للأسماء وتسجيل المكالمات ."
+   ],
+   [
+    "n",
+    "ضرورة إغلاق التطبيقات المهمة بكلمة سر تختلف عن الخاص بالهاتف، مع التشديد على قراءة أذونات التطبيقات قبل تحميلها وعدم الضغط على موافقة قبل التحقق منها ."
+   ],
+   [
+    "p",
+    "وتجنبا لحالات السرقة التي يمكن أن يتعرض لها هاتفك في أي وقت أو أي مكان أنه يمكنك استخدام خدمة Find Hub للتحكم فى هاتفك عن بعد حال سرقته، وهي مفعلة تلقائيا بمجرد إضافة حساب جوجل على الهاتف ولا تحتاج إلى تحميل تطبيق، كما يمكنك استخدام مزايا أمان جوجل وخاصية التحقق بخطوتين لضمان المزيد من الأمان والحماية لهاتفك المحمول، وقد تم شرح  ذلك في موضوع سابق ."
+   ],
+   [
+    "h",
+    "بعض النصائح لحماية هاتفك من الاختراق 👇"
+   ],
+   [
+    "p",
+    "منها، الاهتمام بصفة دورية بتحديث هاتفك بجانب تحميل تطبيق Antivirus لمقاومة الفيروسات، وتجنب استخدام الواي فاي العام وفي الشوارع لاحتمالية اختراقه من قبل الكثيرين، كما عليك الابتعاد عن ترك إعدادات البلوثوت مفتوحة وإخفاء ظهور البلوتوث الخاص بك ."
+   ],
+   [
+    "h",
+    "لا تقم بعمل «Root» أو «Jailbreak» لهاتفك ."
+   ],
+   [
+    "p",
+    "حقًا لم تعد هناك حاجة ملحة لفك حماية جهازك إلا لو كنت مطورًا تستخدم الهاتف بغرض التجريب فقط وليس هاتفك الشخصي الذي تعتمد عليه في كل شيء، فلقد تطور نظاما التشغيل iOS وأندرويد بدرجة كبيرة وقدما خيارات واسعة بحيث لم تعد هناك حاجة فعلية للمستخدم العادي إلى فك حماية الهاتف ."
+   ],
+   [
+    "p",
+    "ففي حالة ما إذا اخترت أن تقوم بفك الحماية، ستعطي للتطبيقات صلاحية الدخول إلى ملفات النظام نفسه والتحكم بها وتغييرها أيضًا، وسيكون هاتفك أكثر عرضة بكثير للبرمجيات الخبيثة ."
+   ],
+   [
+    "p",
+    "فهناك مثلًا بعض البرمجيات الضارة التي تقوم بعمليات مكثفة في نفس الوقت، فتستهلك أقصى طاقة للمعالج في العمل لمدة طويلة مما يجعل الجهاز يصاب بالسخونة الشديدة ."
+   ],
+   [
+    "h",
+    "لا تستخدم نفس كلمة السر لحساباتك ."
+   ],
+   [
+    "p",
+    "دائمًا اختر كلمات سر مختلفة للمواقع والخدمات التي تستخدمها، فلا تجعل الأمر سهلًا على من يستطيع تجاوز قفل هاتفك أن يمرح في كل حساباتك وهو يعلم أن جميعها بنفس كلمة السر!"
+   ],
+   [
+    "p",
+    "ولا تحتفظ بكلمات السر في ملف نصي على الهاتف لكي تتذكرها، ربما الأفضل أن تستخدم تطبيقًا لإدارة كلمات السر وتغلقه بكلمة سر أكثر تعقيدًا، أو تكتبهم في ورقة وتحتفظ بها في حافظتك الشخصية ."
+   ],
+   [
+    "p",
+    "إذا طبقت هذه النصائح وكنت حذرًا سيكون من الصعب على أي شخص اختراق هاتفك والعبث به وببياناتك، فقط لا تكن متساهلًا مع خصوصية هاتفك لأنه الآن يحوي كل شيء عنك؛ حساباتك، ذكرياتك، بياناتك، كل شيء ."
+   ],
+   [
+    "p",
+    "وفي منشور سابق قمت فيه بالتوضيح عن بعض الاكواد للتأكد من أن الهاتف به تحويل مكالماتاو لا وليس التأكد من الاختراق  ."
+   ]
+  ],
+  "pray": "آللَّهُــمَّ صَلِّ وَسَـــلِّمْ وَبَارِڪ على نَبِيِّنَـــا مُحمَّد ﷺ",
+  "src": null
+ },
+ {
+  "id": "secret-codes",
+  "t": "تطبيقين لمعرفة الاكواد السرية لكل هاتف",
+  "c": "كيف تحمي نفسك وهاتفك من الاختراق",
+  "i": "lock",
+  "d": "تطبيقين من جوجل بلاي بيعرّفوك الأكواد السرية لهاتفك أيًا كان نوعه.",
+  "banner": "✅✍موضوع مهم جداً 🚨 📱",
+  "blocks": [
+   [
+    "p",
+    "تطبيقين² معرفة الاكواد السرية لجميع الهواتف الذكية"
+   ],
+   [
+    "s",
+    1,
+    "تطبيق All Secret Codes for Android 📲"
+   ],
+   [
+    "s",
+    2,
+    "تطبيق Secret Codes and Hacks 📲"
+   ],
+   [
+    "p",
+    "بسبب كثرة التطبيقات الموجودة في جوجل بلاي يكون الامر معقد ان تحصل على اداة او تطبيق مفيد تستفيد منه بشكل كبير دائما وبشكل مستمر ."
+   ],
+   [
+    "p",
+    "سوف نتعرف الى اداة توفر لنا مميزات كثيرة جدا وهي مميزات مهمة للاندرويد وحتى يمكننا استعمالها على اجهزة ايفون IOS حيث اننا سوف نتعرف الى اداة توفر لنا اكواد مفيدة جدا يمكننا الاستفادة منها على الموبايل وهي طريقة مجانية بالتاكيد ومميزات اخرى سوف نتعرف اليها ."
+   ],
+   [
+    "p",
+    "سوف نتعرف الى \"تطبيقين²\" موجودين في جوجل بلاي"
+   ],
+   [
+    "h",
+    "التطبيق الاول \" All Secret Codes for Android \""
+   ],
+   [
+    "p",
+    "وهو تطبيق يختص في مجال الاكواد السرية التي يمكننا الاستفادة منها على هواتفنا بالاضافة الى ادوات كثيرة اخرى يمكننا الاستفادة منها ايضا سوف تجعلنا نتعرف الى ابسط التفاصيل عن هاتفنا مهما يكن نوعه سوائا هاتف سامسونج او اوبو , هواوي الخ..."
+   ],
+   [
+    "h",
+    "والتطبيق الثاني \"Secret Codes and Hacks\""
+   ],
+   [
+    "p",
+    "وهو أيضا تطبيق يختص في مجال الاكواد السرية التي يمكننا الاستفادة منها على هواتفنا يمكننا الاستفادة منها ايضا سوف تجعلنا نتعرف الى ابسط التفاصيل عن هاتفنا مهما يكن نوعه سوائا هاتف سامسونج او اوبو , هواوي , وايفون .. اخ"
+   ],
+   [
+    "l",
+    "All Secret Codes for Android",
+    "https://bit.ly/AllSecretCodes-for-Android"
+   ],
+   [
+    "w",
+    "ملحوظة هامة: برجاء الحذر في التعامل مع هذه الاكواد"
+   ],
+   [
+    "w",
+    "لأن استخدامها بشكل خاطئ قد يؤدي إلى الأضرار بهاتفك"
+   ]
+  ],
+  "pray": "آللَّهُــمَّ صَلِّ وَسَـــلِّمْ وَبَارِڪ على نَبِيِّنَـــا مُحمَّد ﷺ",
+  "src": null
+ }
 ];
 const cats=[...new Set(topics.map(x=>x.c))];
 let cur="الكل",slide=0,timer;
@@ -227,24 +419,37 @@ function renderNav(){
  $("sideCats").innerHTML=cats.map(c=>{const n=topics.filter(x=>x.c===c).length;return `<button class="cat ${c===cur?"on":""}" data-c="${c}" style="--g:${G[c]}"><span class="ci">${ICON[CATICON[c]].replace('width="26" height="26"','width="20" height="20"')}</span><span><span class="cn">${c}</span><span class="cc">${n} موضوع</span></span></button>`}).join("")+`<button class="cat ${cur==="الكل"?"on":""}" data-c="الكل"><span class="ci" style="background:#16306e">${ICON.home.replace('width="26" height="26"','width="20" height="20"')}</span><span><span class="cn">عرض كل المواضيع</span><span class="cc">${topics.length} موضوع</span></span></button>`;
 }
 function renderHero(){
- const feat=topics.slice(0,3);
- $("hero").innerHTML=feat.map((x,k)=>`<div class="slide ${k===slide?"on":""}">${art(x,true)}<div class="stxt"><span class="tag">${x.c}</span><h2>${x.t}</h2><p>${x.d}</p><a class="btn" href="${x.u}" target="_blank" rel="noopener">افتح المنشور ${arrow}</a></div></div>`).join("")+`<div class="dots">${feat.map((_,k)=>`<button data-s="${k}" class="${k===slide?"on":""}" aria-label="${k+1}"></button>`).join("")}</div>`;
+ const feat=topics.slice(0,3);if(!feat.length)return;
+ $("hero").innerHTML=feat.map((x,k)=>`<div class="slide ${k===slide?"on":""}">${art(x,true)}<div class="stxt"><span class="tag">${x.c}</span><h2>${x.t}</h2><p>${x.d}</p><a class="btn" href="#/t/${x.id}">اقرأ الموضوع ${arrow}</a></div></div>`).join("")+`<div class="dots">${feat.length>1?feat.map((_,k)=>`<button data-s="${k}" class="${k===slide?"on":""}" aria-label="${k+1}"></button>`).join(""):""}</div>`;
 }
 function renderGrid(){
  const q=$("q").value.trim().toLowerCase();
  const list=topics.filter(x=>(cur==="الكل"||x.c===cur)&&(x.t+" "+x.d+" "+x.c).toLowerCase().includes(q));
  $("count").textContent=list.length+" موضوع";
- $("grid").innerHTML=list.length?list.map(x=>`<a class="card" href="${x.u}" target="_blank" rel="noopener">${art(x)}<div class="cb"><span class="ctag" style="--g:${G[x.c]}">${x.c}</span><h3>${x.t}</h3><p>${x.d}</p><span class="more">افتح المنشور ${arrow}</span></div></a>`).join(""):'<div class="empty">مفيش نتائج</div>';
+ $("grid").innerHTML=list.length?list.map(x=>`<a class="card" href="#/t/${x.id}">${art(x)}<div class="cb"><span class="ctag" style="--g:${G[x.c]}">${x.c}</span><h3>${x.t}</h3><p>${x.d}</p><span class="more">اقرأ الموضوع ${arrow}</span></div></a>`).join(""):'<div class="empty">مفيش نتائج</div>';
 }
 function render(){renderNav();renderGrid()}
-function go(c){cur=c;$("nav").classList.remove("open");render()}
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function renderTopic(x){
+ const body=x.blocks.map(b=>b[0]==="h"?`<h3>${esc(b[1])}</h3>`:b[0]==="s"?`<div class="step"><span class="num">${b[1]}</span><p>${esc(b[2])}</p></div>`:b[0]==="n"?`<p class="note">${esc(b[1])}</p>`:b[0]==="w"?`<p class="note warn">${esc(b[1])}</p>`:b[0]==="l"?`<a class="applink" href="${b[2]}" target="_blank" rel="noopener">⬇ ${esc(b[1])}<small dir="ltr">${b[2].replace("https://","")}</small></a>`:`<p>${esc(b[1])}</p>`).join("");
+ $("art").innerHTML=`<a class="back" href="#">${arrow.replace("M19 12H5M12 19l-7-7 7-7","M5 12h14M12 5l7 7-7 7")} الرجوع للرئيسية</a><span class="ctag" style="--g:${G[x.c]}">${x.c}</span><div class="banner">${esc(x.banner)}</div><h1 class="at">${esc(x.t)}</h1><div class="abody">${body}</div>${x.pray?`<div class="pray">${esc(x.pray)}</div>`:""}<a class="back" href="#">${arrow.replace("M19 12H5M12 19l-7-7 7-7","M5 12h14M12 5l7 7-7 7")} الرجوع للرئيسية</a>`;
+}
+function route(){
+ const m=location.hash.match(/^#\/t\/(.+)$/),x=m&&topics.find(t=>t.id===decodeURIComponent(m[1]));
+ const show=!!x;
+ $("art").hidden=!show;$("hero").hidden=show;$("secHead").hidden=show;$("grid").hidden=show;
+ if(show){renderTopic(x);document.title=x.t+" | موسوعة المعرفة"}else document.title="موسوعة المعرفة";
+ window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+function go(c){cur=c;$("nav").classList.remove("open");if(location.hash){location.hash=""}else route();render()}
 document.addEventListener("click",e=>{
  const b=e.target.closest("[data-c]");if(b){go(b.dataset.c);return}
  const d=e.target.closest("[data-s]");if(d){slide=+d.dataset.s;renderHero();restart()}
 });
 $("q").addEventListener("input",renderGrid);
 $("menuBtn").addEventListener("click",()=>$("nav").classList.toggle("open"));
-function restart(){clearInterval(timer);timer=setInterval(()=>{slide=(slide+1)%3;renderHero()},6000)}
+function restart(){clearInterval(timer);timer=setInterval(()=>{slide=(slide+1)%Math.min(3,topics.length);renderHero()},6000)}
 function tick(){
  const n=new Date();
  const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Africa/Cairo",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).formatToParts(n);
@@ -257,5 +462,5 @@ function tick(){
  $("hh").setAttribute("transform",`rotate(${(h%12)*30+m/2} 23 23)`);
  $("mh").setAttribute("transform",`rotate(${m*6} 23 23)`);
 }
-render();renderHero();restart();tick();setInterval(tick,1000);
+render();route();renderHero();restart();tick();setInterval(tick,1000);
 </script></body></html>
