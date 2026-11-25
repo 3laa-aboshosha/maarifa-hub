@@ -218,6 +218,17 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
 .tipcard p{margin:0;color:var(--ink);font-size:15px;line-height:1.8}
 .tipcard a{display:inline-block;margin-top:6px;color:var(--acc2);font-size:13px;text-decoration:none}
 @media(max-width:700px){.tipcard{margin:0 16px 12px;padding:12px}.tipcard p{font-size:14px}}
+.logo{border:0!important;background:none!important;box-shadow:none!important;position:relative;width:56px!important;height:60px!important;display:grid;place-items:center}
+.logo svg{width:100%!important;height:100%!important;overflow:visible}
+@media(min-width:701px){.logo{width:72px!important;height:78px!important}}
+@keyframes lgshine{0%,55%{transform:translateX(-70px) skewX(-20deg)}100%{transform:translateX(70px) skewX(-20deg)}}
+@keyframes lgglow{0%,100%{opacity:.35;transform:scale(.92)}50%{opacity:.9;transform:scale(1.08)}}
+@keyframes lgdash{to{stroke-dashoffset:-120}}
+@keyframes lgck{0%,70%{stroke-dashoffset:0}85%{stroke-dashoffset:20}100%{stroke-dashoffset:0}}
+.lgshine{animation:lgshine 4.5s ease-in-out infinite}
+.lgglow{transform-origin:50% 50%;animation:lgglow 3.2s ease-in-out infinite}
+.lgdash{animation:lgdash 6s linear infinite}
+@media(prefers-reduced-motion:reduce){.lgshine,.lgglow,.lgdash{animation:none}}
 </style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0b1230"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="موسوعة المعرفة"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="icon" href="assets/1-appicon192.png"><link rel="apple-touch-icon" href="assets/2-appicon512.png"></head>
 <body>
 <div class="wrap">
@@ -233,7 +244,7 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
     <p>كل ما تحتاجه من شروحات ومعلومات تقنية في مكان واحد</p>
   </div>
   <div class="owner">
-    <div class="logo"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/><path d="M10.2 8.2a2 2 0 1 1 2.8 1.8c-.7.4-1 .8-1 1.5M12 14h.01"/></svg></div>
+    <div class="logo"><svg viewBox="0 0 64 64"><defs><linearGradient id="aG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f8cff"/><stop offset="1" stop-color="#1e3a9e"/></linearGradient><clipPath id="aC"><path d="M32 3L56 12v20c0 14-10 24-24 29C18 56 8 46 8 32V12z"/></clipPath></defs><path d="M32 3L56 12v20c0 14-10 24-24 29C18 56 8 46 8 32V12z" fill="url(#aG)" stroke="#93c5fd" stroke-width="2.5" stroke-linejoin="round"/><g clip-path="url(#aC)"><rect class="lgshine" x="26" y="0" width="14" height="64" fill="rgba(255,255,255,.35)"/></g><text x="32" y="44" text-anchor="middle" font-family="TitleC,sans-serif" font-size="32" fill="#fff">م</text></svg></div>
   </div>
 </header>
 
