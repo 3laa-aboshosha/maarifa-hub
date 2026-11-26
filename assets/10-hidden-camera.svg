@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط لكشاف بيضوي على عدسة كاميرا صغيرة مخفية">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient>
+<radialGradient id="beam" cx="0" cy="0.5" r="1"><stop offset="0" stop-color="#fde68a" stop-opacity=".75"/><stop offset="1" stop-color="#fde68a" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<path d="M200 190L560 90V310Z" fill="url(#beam)"/>
+<g transform="translate(60 150)"><rect x="0" y="10" width="90" height="60" rx="14" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="5"/><circle cx="45" cy="40" r="14" fill="#fde68a"/><rect x="90" y="22" width="70" height="36" rx="8" fill="#16225c" stroke="#7dd3fc" stroke-width="5"/></g>
+<g transform="translate(540 130)"><rect x="0" y="0" width="190" height="140" rx="18" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="5"/><circle cx="95" cy="70" r="40" fill="#0b1236" stroke="#38bdf8" stroke-width="5"/><circle cx="95" cy="70" r="16" fill="#38bdf8"/><circle cx="84" cy="58" r="6" fill="#e0f2fe"/><circle cx="160" cy="24" r="8" fill="#ef4444"/></g>
+</svg>
