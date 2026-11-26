@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط لموبايل متوصل بهارد خارجي بكابل">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient>
+<radialGradient id="beam" cx="0" cy="0.5" r="1"><stop offset="0" stop-color="#fde68a" stop-opacity=".75"/><stop offset="1" stop-color="#fde68a" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<g transform="translate(90 70)"><rect x="0" y="0" width="140" height="260" rx="24" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="5"/><rect x="14" y="28" width="112" height="196" rx="10" fill="#0b1236"/><rect x="38" y="80" width="64" height="44" rx="6" fill="#38bdf8"/><rect x="38" y="140" width="64" height="12" rx="6" fill="#7dd3fc"/><rect x="38" y="164" width="40" height="12" rx="6" fill="#7dd3fc"/><circle cx="70" cy="245" r="7" fill="#7dd3fc"/></g>
+<path d="M230 330C300 330 300 300 360 300H470" fill="none" stroke="#7dd3fc" stroke-width="10" stroke-linecap="round"/>
+<g transform="translate(470 130)"><rect x="0" y="0" width="240" height="190" rx="20" fill="#16225c" stroke="#7dd3fc" stroke-width="5"/><circle cx="120" cy="90" r="56" fill="#0b1236" stroke="#38bdf8" stroke-width="5"/><circle cx="120" cy="90" r="18" fill="#38bdf8"/><path d="M120 90L160 60" stroke="#7dd3fc" stroke-width="6" stroke-linecap="round"/><circle cx="210" cy="165" r="8" fill="#22c55e"/></g>
+</svg>
