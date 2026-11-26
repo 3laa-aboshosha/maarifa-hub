@@ -254,6 +254,19 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
 .adtoast{position:fixed;inset-inline:12px;bottom:16px;max-width:420px;margin-inline:auto;z-index:60;background:#0b1a3a;border:1px solid #10b981;border-radius:16px;padding:12px 16px;box-shadow:0 12px 40px -10px #000;transform:translateY(160%);transition:transform .4s;text-align:center}
 .adtoast.on{transform:none}.adt-l{font-size:12px;color:#34d399}.adt-x{font-size:20px;line-height:2;color:#fff}.adt-c{font:inherit;font-size:13px;color:#b7c4e6;background:none;border:1px solid #334155;border-radius:99px;padding:3px 14px;cursor:pointer}
 @media(prefers-reduced-motion:reduce){.adtoast{transition:none}}
+.askbar.pw{background:linear-gradient(135deg,#6d28d9,#be185d);box-shadow:0 8px 24px -10px rgba(190,24,93,.55);flex:1 1 100%}
+.pwtabs{display:flex;gap:8px;margin:14px 0}
+.pwtab{flex:1;padding:11px;border-radius:11px;border:1px solid #1e3170;background:#0f1a3d;color:#cbd5e1;font-weight:700;font-size:14.5px;cursor:pointer;font-family:inherit}
+.pwtab.on{background:#6d28d9;border-color:#8b5cf6;color:#fff}
+.pwrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 10px}
+.pwl{color:#8fa0c7;font-size:13.5px}
+.pwchip{padding:8px 16px;border-radius:999px;border:1px solid #1e3170;background:#0f1a3d;color:#cbd5e1;cursor:pointer;font-family:inherit;font-size:14px}
+.pwchip.on{background:#6d28d9;border-color:#8b5cf6;color:#fff}
+.pwgen{width:100%;padding:14px;border:0;border-radius:12px;background:linear-gradient(135deg,#6d28d9,#be185d);color:#fff;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit;margin:4px 0 12px}
+.pwout{display:flex;align-items:center;gap:10px;background:#0f1a3d;border:1px dashed #3b4f9e;border-radius:12px;padding:14px;margin:0 0 14px}
+.pwout code{flex:1;font-size:19px;line-height:1.7;color:#a5f3fc;word-break:break-all;font-family:ui-monospace,Menlo,Consolas,monospace}
+.pwout code.ph{word-break:normal;font-family:inherit;font-size:21px}
+.pwcopy{flex:none;padding:9px 14px;border-radius:10px;border:1px solid #1e3170;background:#10204a;color:#fff;cursor:pointer;font-family:inherit;font-size:13.5px}
 </style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0b1230"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="موسوعة المعرفة"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="icon" href="assets/1-appicon192.png"><link rel="apple-touch-icon" href="assets/2-appicon512.png"></head>
 <body>
 <div class="wrap">
@@ -278,7 +291,7 @@ footer{margin:34px -16px 0;background:#030612;border-top:1px solid var(--line);p
   <label class="nsearch"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="ابحث عن موضوع..." autocomplete="off"></label>
 </nav>
 
-<div class="askwrap"><a class="askbar" href="https://t.me/Alaa_Aboshosha12" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .7-1 1.4M12 16h.01"/></svg><span><b>اسأل في التقنية</b><small>اكتب سؤالك وهتوصلك الإجابة على تليجرام</small></span></a><a class="askbar qz" href="#/quiz"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span><b>اختبر أمانك</b><small>10 أسئلة سريعة وتعرف نتيجتك</small></span></a><a class="askbar sc" href="#/scam"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v4M12 15.5v.5"/></svg><span><b>ده نصب؟</b><small>الصق رسالة أو لينك مشكوك فيه وشوف رأينا</small></span></a><a class="askbar ad" href="#/adhkar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>الأذكار والتسبيح</b><small>مسبحة وأذكار الصباح والمساء وتذكير</small></span></a><a class="askbar cl" href="#/checklist"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8 12 3 3 5-6"/></svg><span><b>قائمة الأمان في 5 دقايق</b><small>8 خطوات تأمّن بيها موبايلك، وعلّم على اللي خلصته</small></span></a></div><div class="tipcard" id="tip" hidden><div class="tic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div><div><b>نصيحة اليوم</b><p id="tipT"></p><a id="tipL" hidden>اقرأ الموضوع ←</a></div></div>
+<div class="askwrap"><a class="askbar" href="https://t.me/Alaa_Aboshosha12" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .7-1 1.4M12 16h.01"/></svg><span><b>اسأل في التقنية</b><small>اكتب سؤالك وهتوصلك الإجابة على تليجرام</small></span></a><a class="askbar qz" href="#/quiz"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span><b>اختبر أمانك</b><small>10 أسئلة سريعة وتعرف نتيجتك</small></span></a><a class="askbar sc" href="#/scam"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v4M12 15.5v.5"/></svg><span><b>ده نصب؟</b><small>الصق رسالة أو لينك مشكوك فيه وشوف رأينا</small></span></a><a class="askbar ad" href="#/adhkar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>الأذكار والتسبيح</b><small>مسبحة وأذكار الصباح والمساء وتذكير</small></span></a><a class="askbar cl" href="#/checklist"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8 12 3 3 5-6"/></svg><span><b>قائمة الأمان في 5 دقايق</b><small>8 خطوات تأمّن بيها موبايلك، وعلّم على اللي خلصته</small></span></a><a class="askbar pw" href="#/password"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span><b>اعمل باسورد قوي</b><small>باسورد عشوائي أو جملة سهلة الحفظ، من غير ما تكتب حاجة</small></span></a></div><div class="tipcard" id="tip" hidden><div class="tic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div><div><b>نصيحة اليوم</b><p id="tipT"></p><a id="tipL" hidden>اقرأ الموضوع ←</a></div></div>
 
 <div class="layout">
   <main>
@@ -398,7 +411,71 @@ function tick(){
  $("mh").setAttribute("transform",`rotate(${m*6} 23 23)`);
 }
 render();route();renderHero();restart();tick();setInterval(tick,1000);
-</script><button id="pwaBtn" type="button">📲 ثبّت التطبيق</button><script>
+</script><script>(function(){
+const WL=["قمر","شمس","بحر","نيل","مطر","سحاب","نجم","نور","فجر","صبح","مسا","ليل","نهار","هوا","برق","رعد","ندى","جبل","رمل","وادي","شط","صحرا","غابة","حقل","بستان","مزرعة","جزيرة","قلعة","برج","زهرة","وردة","شجرة","نخلة","غصن","ورقة","بذرة","عسل","تمر","عنب","تين","خوخ","تفاح","موز","فراولة","ليمون","برتقال","مانجو","رمان","بطيخ","مشمش","جوافة","كمثرى","خيار","طماطم","بطاطس","بصل","ثوم","فلفل","جزر","كوسة","بامية","سبانخ","جرجير","نعناع","زعتر","قرفة","عيش","جبنة","زبادي","فول","عدس","أرز","شاي","قهوة","حليب","مية","عصير","سكر","ملح","قطة","كلب","حصان","بقرة","خروف","ماعز","فرخة","بطة","حمامة","عصفور","نسر","صقر","بومة","سمكة","سلحفاة","أرنب","سنجاب","فيل","أسد","نمر","ثعلب","دب","قرد","جمل","غزال","ضفدع","فراشة","نحلة","نملة","كتاب","قلم","مسطرة","مكتب","كرسي","سرير","باب","شباك","مفتاح","قفل","ساعة","نظارة","شنطة","حذاء","قبعة","طرابيزة","مروحة","تلاجة","غسالة","فرن","كوباية","طبق","معلقة","شوكة","سكينة","علبة","صندوق","سلم","حبل","منشفة","صابون","مشط","مراية","مخدة","بطانية","سجادة","ستارة","حديقة","مدرسة","مسجد","مكتبة","محطة","مطار","ميناء","كوبري","شارع","ميدان","قرية","مدينة","كورة","مضرب","سلة","دراجة","عربية","قطار","مركب","طيارة","باخرة","سريع","كبير","صغير","طويل","قصير","تقيل","خفيف","جديد","حلو","قوي","ذكي","نشيط","هادي","صافي","دافي","بارد","سخن","نضيف","جميل"];
+const SRCS=[
+["NCSC (المركز الوطني للأمن السيبراني البريطاني): Three random words","https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/three-random-words"],
+["Google: Create a strong password","https://support.google.com/accounts/answer/32040"],
+["Google: Get started with Password Manager","https://support.google.com/accounts/answer/6208650"],
+["Apple: Automatic strong passwords","https://support.apple.com/guide/security/automatic-strong-passwords-secc84c811c4/web"]
+];
+let M={mode:"p",len:16,sym:true,words:4};
+function rnd(max){const lim=Math.floor(4294967296/max)*max;const a=new Uint32Array(1);do{crypto.getRandomValues(a)}while(a[0]>=lim);return a[0]%max}
+function genPass(){
+ const L="abcdefghjkmnpqrstuvwxyz",U="ABCDEFGHJKMNPQRSTUVWXYZ",D="23456789",S="!@#$%^&*()-_=+";
+ const pool=L+U+D+(M.sym?S:"");
+ let p="";
+ for(let t=0;t<60;t++){
+  p="";for(let i=0;i<M.len;i++)p+=pool[rnd(pool.length)];
+  const hasU=[...p].some(c=>U.includes(c)),hasD=[...p].some(c=>D.includes(c)),hasS=[...p].some(c=>S.includes(c));
+  if(hasU&&hasD&&(!M.sym||hasS))break;
+ }
+ return p;
+}
+function genPhrase(){
+ const used=new Set(),w=[];
+ while(w.length<M.words){const x=WL[rnd(WL.length)];if(!used.has(x)){used.add(x);w.push(x)}}
+ return w.join("-");
+}
+function gen(){
+ const v=M.mode==="p"?genPass():genPhrase();
+ const r=$("pwRes");r.dataset.v=v;
+ r.textContent=M.mode==="p"?v:v.replace(/-/g,"-\u200B");
+ r.setAttribute("dir",M.mode==="p"?"ltr":"rtl");
+ r.classList.toggle("ph",M.mode==="j");
+ $("pwCp").textContent="📋 انسخ";
+}
+function drawOpts(){
+ const o=$("pwOpts");
+ if(M.mode==="p"){
+  o.innerHTML='<div class="pwrow"><span class="pwl">الطول:</span>'+[12,16,20].map(n=>'<button class="pwchip'+(M.len===n?" on":"")+'" data-l="'+n+'">'+n+'</button>').join("")+'</div><div class="pwrow"><button class="pwchip'+(M.sym?" on":"")+'" id="pwSym">رموز !@#$</button></div>';
+  o.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{M.len=+b.dataset.l;drawOpts();gen()});
+  $("pwSym").onclick=()=>{M.sym=!M.sym;drawOpts();gen()};
+ }else{
+  o.innerHTML='<div class="pwrow"><span class="pwl">عدد الكلمات:</span>'+[3,4,5].map(n=>'<button class="pwchip'+(M.words===n?" on":"")+'" data-w="'+n+'">'+n+'</button>').join("")+'</div>';
+  o.querySelectorAll("[data-w]").forEach(b=>b.onclick=()=>{M.words=+b.dataset.w;drawOpts();gen()});
+ }
+}
+function refresh(){
+ document.querySelectorAll(".pwtab").forEach(b=>b.classList.toggle("on",b.dataset.m===M.mode));
+ $("pwGo").textContent=M.mode==="p"?"🔁 اعمل باسورد جديد":"🔁 اعمل جملة جديدة";
+ drawOpts();gen();
+}
+function show(){
+ if(location.hash!=="#/password")return;
+ $("art").hidden=false;$("secHead").hidden=true;$("grid").hidden=true;$("hero").hidden=true;$("cover").hidden=true;
+ document.title="اعمل باسورد قوي | موسوعة المعرفة";
+ $("art").innerHTML='<a class="back" href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg> الرجوع للرئيسية</a><div class="banner">🔑 باسورد قوي</div><h1 class="at">اعمل باسورد قوي في ثانية</h1><p class="qintro">من غير ما تكتب أي حاجة: دوس الزرار وهيطلعلك باسورد عشوائي قوي، أو جملة سر من كلمات عشوائية سهلة الحفظ.</p><div class="pwtabs"><button class="pwtab" data-m="p">باسورد عشوائي</button><button class="pwtab" data-m="j">جملة كلمات</button></div><div id="pwOpts"></div><button class="pwgen" id="pwGo"></button><div class="pwout"><code id="pwRes"></code><button class="pwcopy" id="pwCp">📋 انسخ</button></div><p class="note">🔒 خصوصيتك: الصفحة دي مش بتبعت ولا بتحفظ أي حاجة. الباسورد بيتعمل جوه متصفحك على جهازك بخاصية crypto.getRandomValues، ولو قفلت الصفحة كل حاجة بتتمسح.</p><h3>ليه الباسورد ده قوي؟</h3><p class="bul">• الباسوردات الضعيفة والمشهورة ممكن تتكسر في ثواني. وكل ما الباسورد يطول ويبقى عشوائي، التخمين بيصعب جدًا (NCSC).</p><p class="bul">• متستخدمش اسمك ولا تاريخ ميلادك ولا رقم تليفونك: دي أول حاجة بيجربوها (جوجل).</p><p class="bul">• تبديل حروف برموز شبهها (زي @ بدل a) حركة قديمة يعرفها الهكر، ومش بتخلي الباسورد أقوى بشكل كبير (NCSC).</p><p class="bul">• جملة من ٣ كلمات عشوائية أو أكتر أسهل تحفظها، وقوية كفاية لأغلب الاستخدامات (NCSC).</p><p class="bul">• متعيدش نفس الباسورد في أكتر من موقع. كل موقع ليه باسورد مختلف (جوجل).</p><h3>احفظه فين؟</h3><p class="bul">• الأسهل: مدير كلمات مرور زي Google Password Manager أو تطبيق Passwords في الآيفون. هو بيعمل باسوردات قوية وبيحفظها وبيملاها لوحده (جوجل وآبل).</p><h3>المصادر</h3><div class="clsrc">'+SRCS.map(s=>'<div><a href="'+s[1]+'" target="_blank" rel="noopener" dir="ltr">'+s[0]+'</a></div>').join("")+'</div>';
+ document.querySelectorAll(".pwtab").forEach(b=>b.onclick=()=>{M.mode=b.dataset.m;refresh()});
+ $("pwGo").onclick=gen;
+ $("pwCp").onclick=async()=>{const v=$("pwRes").dataset.v;try{await navigator.clipboard.writeText(v);$("pwCp").textContent="اتنسخ ✅"}catch(e){const ta=document.createElement("textarea");ta.value=v;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");$("pwCp").textContent="اتنسخ ✅"}catch(_){}ta.remove()}};
+ refresh();
+ window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",show);show();
+})();
+</script>
+<button id="pwaBtn" type="button">📲 ثبّت التطبيق</button><script>
 if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 let dp;addEventListener("beforeinstallprompt",e=>{e.preventDefault();dp=e;pwaBtn.classList.add("on")});
 pwaBtn.onclick=async()=>{if(!dp)return;dp.prompt();await dp.userChoice;dp=null;pwaBtn.classList.remove("on")};
