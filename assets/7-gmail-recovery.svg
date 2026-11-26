@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط لمفتاح وظرف إيميل وسهم استرجاع">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient>
+</defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<g transform="translate(250 110)"><rect x="0" y="0" width="300" height="190" rx="22" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="5"/><path d="M20 30L150 120L280 30" fill="none" stroke="#7dd3fc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 168L110 92M280 168L190 92" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity=".7"/></g>
+<g transform="translate(560 190)" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="30" fill="#16a34a" stroke="#bbf7d0" stroke-width="6"/><circle cx="40" cy="40" r="9" fill="#052e16" stroke="none"/><path d="M68 62L150 144M120 114l24-24M138 132l22-22" stroke="#bbf7d0" stroke-width="12"/></g>
+<g transform="translate(70 130)" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="60" cy="70" r="52" stroke="#7dd3fc" stroke-width="9" stroke-dasharray="230 100"/><path d="M110 22L120 54L88 50" stroke="#7dd3fc" stroke-width="9"/><rect x="36" y="64" width="48" height="38" rx="8" fill="#16a34a" stroke="none"/><path d="M44 64V52a16 16 0 0 1 32 0v12" stroke="#bbf7d0" stroke-width="7"/></g>
+</svg>
