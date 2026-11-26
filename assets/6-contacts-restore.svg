@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط لموبايل فيه جهات اتصال وسهم دائري للاسترجاع">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient>
+<linearGradient id="ph" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3b8f"/><stop offset="1" stop-color="#16225c"/></linearGradient>
+</defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<rect x="320" y="40" width="160" height="320" rx="26" fill="url(#ph)" stroke="#7dd3fc" stroke-width="4"/>
+<rect x="334" y="80" width="132" height="244" rx="10" fill="#0b1236"/>
+<g fill="#1e3a8a" stroke="#7dd3fc" stroke-width="2">
+<rect x="344" y="96" width="112" height="46" rx="8"/><rect x="344" y="150" width="112" height="46" rx="8"/><rect x="344" y="204" width="112" height="46" rx="8"/><rect x="344" y="258" width="112" height="46" rx="8" stroke-dasharray="6 5" fill="none"/></g>
+<g fill="#7dd3fc"><circle cx="366" cy="119" r="10"/><circle cx="366" cy="173" r="10"/><circle cx="366" cy="227" r="10"/></g>
+<g stroke="#bae6fd" stroke-width="5" stroke-linecap="round"><path d="M388 113H440M388 127H420M388 167H440M388 181H420M388 221H440M388 235H420"/></g>
+<g transform="translate(580 120)" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="70" cy="80" r="64" stroke="#16a34a" stroke-width="10" stroke-dasharray="300 110"/><path d="M96 10L130 28L100 52" stroke="#16a34a" stroke-width="10"/><circle cx="70" cy="80" r="18" fill="#bbf7d0" stroke="none"/><path d="M26 140c8-26 74-26 88 0" stroke="#bbf7d0" stroke-width="8"/></g>
+<g transform="translate(90 150)"><rect x="0" y="0" width="150" height="110" rx="16" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="4"/><path d="M14 30L75 70L136 30" fill="none" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 -20h50M75 -20v20" stroke="#7dd3fc" stroke-width="0"/></g>
+<g stroke="#38bdf8" stroke-width="5" stroke-linecap="round" fill="none" stroke-dasharray="2 12"><path d="M250 205H312"/><path d="M488 200H570"/></g>
+</svg>
