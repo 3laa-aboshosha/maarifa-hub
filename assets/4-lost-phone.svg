@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط لموبايل عليه علامة موقع">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient>
+<linearGradient id="ph" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3b8f"/><stop offset="1" stop-color="#16225c"/></linearGradient>
+<linearGradient id="pin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+</defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g fill="none" stroke="#38bdf8" stroke-opacity=".35" stroke-width="3">
+<circle cx="400" cy="210" r="70"/><circle cx="400" cy="210" r="115"/><circle cx="400" cy="210" r="160"/>
+</g>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<rect x="340" y="80" width="120" height="236" rx="22" fill="url(#ph)" stroke="#7dd3fc" stroke-width="4"/>
+<rect x="352" y="104" width="96" height="176" rx="8" fill="#0b1236"/>
+<rect x="384" y="90" width="32" height="6" rx="3" fill="#7dd3fc"/>
+<circle cx="400" cy="298" r="7" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+<path d="M400 124c-17 0-30 13-30 29 0 22 30 54 30 54s30-32 30-54c0-16-13-29-30-29z" fill="url(#pin)"/>
+<circle cx="400" cy="153" r="10" fill="#0b1236"/>
+<g transform="translate(560 110)"><rect width="84" height="64" rx="12" fill="#16a34a"/><path d="M22 6v-8a20 20 0 0 1 40 0v8" transform="translate(0 4)" fill="none" stroke="#bbf7d0" stroke-width="7" stroke-linecap="round"/><rect x="8" y="26" width="68" height="34" rx="10" fill="#22c55e"/><circle cx="42" cy="43" r="6" fill="#052e16"/></g>
+<g transform="translate(150 150)"><path d="M10 40c0-16 14-30 30-30s30 14 30 30-14 30-30 30c-8 0-15-3-20-8l-14 14" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/><circle cx="40" cy="40" r="18" fill="#fbbf24" fill-opacity=".15"/></g>
+</svg>
