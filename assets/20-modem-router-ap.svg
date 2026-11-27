@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط: خط الإنترنت ثم مودم ثم راوتر ثم نقطة وصول وأجهزة">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient></defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<g fill="none" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M80 200H140"/><path d="M270 200H320"/><path d="M450 200H500"/><path d="M630 200H665"/>
+<rect x="140" y="165" width="130" height="70" rx="12" fill="#16225c"/>
+<rect x="320" y="150" width="130" height="100" rx="12" fill="#1e3a8a"/>
+<rect x="500" y="165" width="130" height="70" rx="12" fill="#16225c"/>
+<path d="M665 150V250M665 200H720"/>
+<path d="M520 140c20-20 70-20 90 0M535 125c14-14 50-14 64 0" stroke="#fde68a"/>
+<path d="M335 115c20-20 80-20 100 0M350 100c14-14 56-14 70 0" stroke="#fde68a"/>
+</g>
+<circle cx="80" cy="200" r="10" fill="#fde68a"/>
+<rect x="715" y="170" width="40" height="60" rx="8" fill="#16225c" stroke="#7dd3fc" stroke-width="5"/>
+<g fill="#7dd3fc"><circle cx="165" cy="200" r="6"/><circle cx="185" cy="200" r="6"/><circle cx="345" cy="200" r="6"/><circle cx="365" cy="200" r="6"/><circle cx="385" cy="200" r="6"/><circle cx="525" cy="200" r="6"/><circle cx="545" cy="200" r="6"/></g>
+</svg>
