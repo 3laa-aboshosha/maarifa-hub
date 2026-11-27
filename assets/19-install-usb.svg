@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط لفلاشة متوصلة بلاب توب وسهم تثبيت">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient>
+</defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<g transform="translate(400 60)"><rect x="0" y="0" width="300" height="190" rx="16" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="5"/><rect x="16" y="16" width="268" height="158" rx="8" fill="#0b1236"/><path d="M150 50V120M118 90L150 122L182 90" fill="none" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M370 310H730L700 345H400Z" fill="#16225c" stroke="#7dd3fc" stroke-width="5" stroke-linejoin="round"/>
+<g transform="translate(80 140)"><rect x="70" y="20" width="200" height="90" rx="14" fill="#16225c" stroke="#7dd3fc" stroke-width="5"/><rect x="0" y="40" width="76" height="50" rx="8" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="5"/><rect x="14" y="52" width="11" height="11" rx="3" fill="#7dd3fc"/><rect x="14" y="68" width="11" height="11" rx="3" fill="#7dd3fc"/><rect x="100" y="48" width="110" height="12" rx="6" fill="#38bdf8"/><rect x="100" y="72" width="66" height="12" rx="6" fill="#7dd3fc"/></g>
+<path d="M350 190H320" stroke="#fde68a" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 16"/>
+</svg>
