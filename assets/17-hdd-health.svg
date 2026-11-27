@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="رسم بسيط لهارد خارجي عليه علامة صح ونبض">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient>
+</defs>
+<rect width="800" height="400" rx="24" fill="url(#bg)"/>
+<g stroke="#60a5fa" stroke-opacity=".12" stroke-width="2"><path d="M40 90H760M40 210H760M40 330H760M160 20V380M400 20V380M640 20V380"/></g>
+<g transform="translate(230 60)"><rect x="0" y="0" width="340" height="230" rx="24" fill="#16225c" stroke="#7dd3fc" stroke-width="5"/><circle cx="170" cy="105" r="72" fill="#0b1236" stroke="#38bdf8" stroke-width="5"/><circle cx="170" cy="105" r="20" fill="#38bdf8"/><path d="M170 105L220 70" stroke="#7dd3fc" stroke-width="6" stroke-linecap="round"/><circle cx="296" cy="200" r="9" fill="#22c55e"/></g>
+<path d="M120 335H250L280 300L320 360L360 320L400 335H680" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(610 70)"><circle cx="50" cy="50" r="44" fill="#14532d" stroke="#22c55e" stroke-width="6"/><path d="M28 52L45 69L74 34" fill="none" stroke="#bbf7d0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
