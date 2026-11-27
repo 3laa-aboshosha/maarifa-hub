@@ -6,4 +6,4 @@
 <rect x="60" y="100" width="680" height="240" rx="20" fill="#16225c" stroke="#7dd3fc" stroke-width="5"/>
 <g class="p"><rect x="90" y="140" width="620" height="110" rx="16" fill="#1e3a8a" stroke="#fde68a" stroke-width="6"/><rect x="115" y="165" width="60" height="60" rx="12" fill="#38bdf8"/><text x="200" y="217" font-size="46">Manage BitLocker</text></g>
 <rect x="90" y="280" width="400" height="22" rx="11" fill="#1e3a8a"/>
-</svg
+</svg>
